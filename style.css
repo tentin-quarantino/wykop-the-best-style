@@ -116,7 +116,8 @@
 [data-night-mode] section[data-label^="ad: "] {
     display: none!important
 }
-[data-night-mode]::-webkit-scrollbar {
+[data-night-mode] ::-webkit-scrollbar,
+[data-night-mode]::-webkit-scrollbar{
     width: auto
 }
 [data-night-mode] section.entry,
@@ -267,7 +268,7 @@
     color: #cad0d0
 }
 [data-night-mode] section.notifications section.stream>.content>section.notify {
-    background: #1c1c1c!important;
+    background: #1c1c1c!important
 }
 [data-night-mode] section.notifications section.stream>.content {
     background: #1c1c1c;
@@ -295,3 +296,13 @@
 [data-night-mode] section.search-input form .popper-button button {
     background: #cad0d0
 }
+[data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer {
+    background-image: url(https://github.com/tentin-quarantino/wykop-the-best-style/raw/main/resizer.png)!important;
+    background-size: cover;
+    background-color: #1c1c1c!important
+}
+[data-night-mode] section.editor>.content textarea {
+    resize: vertical;
+    max-height: none;
+}
+
