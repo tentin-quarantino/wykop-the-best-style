@@ -233,7 +233,8 @@
 }
 [data-night-mode] .links > .content .buckets > .bucket:after,
 [data-night-mode] .messages-page section.message > article.me > div.content,
-[data-night-mode] .notifications.dropdown > a:after {
+[data-night-mode] .notifications.dropdown > a:after,
+[data-night-mode] .pm.dropdown > a:after {
     border: none!important
 }
 [data-night-mode] section.link-block {
@@ -270,6 +271,9 @@
 [data-night-mode] section.notifications section.stream>.content>section.notify {
     background: #1c1c1c!important
 }
+[data-night-mode] li>section section.stream>.content>section.item.unread:before {
+    background: #3c3c3c!important
+}
 [data-night-mode] section.notifications section.stream>.content {
     background: #1c1c1c;
 }
@@ -303,6 +307,5 @@
 }
 [data-night-mode] section.editor>.content textarea {
     resize: vertical;
-    max-height: none;
+    max-height: none
 }
-
