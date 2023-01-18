@@ -272,17 +272,21 @@
 [data-night-mode] section.notifications section.stream>.content {
     background: #1c1c1c;
 }
-/* START: Obrazek znaleziska po lewej (strona główna i wykopalisko) */
+/* START: Obrazek znaleziska po lewej */
 [data-night-mode] .home section.link-block > section > article,
 [data-night-mode] .upcoming section.link-block > section > article {
     padding: 24px 16px 25px 260px !important;
 }
+[data-night-mode] .link-page section.link-block > section > article {
+    padding: 24px 16px 25px 340px !important;
+}
 [data-night-mode] .home section.link-block > section > article figure,
-[data-night-mode] .upcoming section.link-block > section > article figure {
+[data-night-mode] .upcoming section.link-block > section > article figure,
+[data-night-mode] .link-page section.link-block > section > article figure {
     right: auto !important;
     left: 16px;
 }
-/* END: Obrazek znaleziska po lewej (strona główna i wykopalisko) */
+/* END: Obrazek znaleziska po lewej */
 [data-night-mode] section.search-results-dropdown {
     box-shadow: 0 5px 26px 5px #1c1c1c!important;
     -webkit-box-shadow: 0 5px 26px 5px #1c1c1c!important;
