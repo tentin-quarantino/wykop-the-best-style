@@ -272,26 +272,14 @@
 [data-night-mode] section.notifications section.stream>.content {
     background: #1c1c1c;
 }
-[data-night-mode] section.search-results-dropdown {
-    box-shadow: 0 5px 26px 5px #1c1c1c!important;
-    -webkit-box-shadow: 0 5px 26px 5px #1c1c1c!important;
-    background: #2c2c2c!important
+/* START: Obrazek znaleziska po lewej (strona główna i wykopalisko) */
+[data-night-mode] .home section.link-block > section > article,
+[data-night-mode] .upcoming section.link-block > section > article {
+    padding: 24px 16px 25px 260px !important;
 }
-[data-night-mode] section.search-results-dropdown section.stream>.content>section article header {
-    background-color: #3c3c3c!important
+[data-night-mode] .home section.link-block > section > article figure,
+[data-night-mode] .upcoming section.link-block > section > article figure {
+    right: auto !important;
+    left: 16px;
 }
-[data-night-mode] section.search-results-dropdown aside.go-to-object>ul>li>ul>li:not(:hover) {
-    background: #505050
-}
-[data-night-mode] section.search-results-dropdown section.stream>.content>footer a:not(.active-select) {
-    background: #2c2c2c!important
-}
-[data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong {
-    color: var(--apple)
-}
-[data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong:before {
-    background: var(--apple)
-}
-[data-night-mode] section.search-input form .popper-button button {
-    background: #cad0d0
-}
+/* END: Obrazek znaleziska po lewej (strona główna i wykopalisko) */
