@@ -295,3 +295,6 @@
 [data-night-mode] section.search-input form .popper-button button {
     background: #cad0d0
 }
+section.entry > header > .right > div > span {
+    color: #39a684!important
+}
