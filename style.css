@@ -8,6 +8,7 @@
     --gullGray: #cad0d0;
     --tuna: #c4c8c9;
     --abbey: #c4c8c9;
+    --athensGray: #3c3c3c;
     --squeeze: rgba(var(--blackishRGB), 0.025)
 }
 [data-night-mode] article.link-article,
@@ -174,6 +175,8 @@
 }
 [data-night-mode] .edit-wrapper > .content > section.entry-content > .wrapper blockquote,
 [data-night-mode] .phone input,
+[data-night-mode] .bucket-create-page input,
+[data-night-mode] .bucket-edit-page input,
 [data-night-mode] .settings-page input,
 [data-night-mode] .settings-page select,
 [data-night-mode] .settings-page textarea,
