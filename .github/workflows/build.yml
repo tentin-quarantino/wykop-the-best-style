@@ -1,0 +1,22 @@
+name: Build AdBlock Rules
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-adblock-rules:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build AdBlock rules
+      run: python3 generate_adblock_rules.py
+
+    - name: Store artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: adblock.rules.txt
+        path: adblock.rules.txt
+        if-no-files-found: error
