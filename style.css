@@ -13,7 +13,7 @@
 [data-night-mode] article.link-article,
 [data-night-mode] aside.left-panel > section.buttons > .content ul li a:before,
 [data-night-mode] ul.menu-dropdown,
-section.editor > header > ul > li.lenny-face ul.menu-dropdown {
+[data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown {
     border: none
 }
 [data-night-mode] .form-elements p:not(.popper).or span,
@@ -116,7 +116,7 @@ section.editor > header > ul > li.lenny-face ul.menu-dropdown {
 [data-night-mode] section[data-label^="ad: "] {
     display: none!important
 }
-::-webkit-scrollbar {
+[data-night-mode]::-webkit-scrollbar {
     width: auto
 }
 [data-night-mode] section.entry,
@@ -209,7 +209,7 @@ section.editor > header > ul > li.lenny-face ul.menu-dropdown {
 [data-night-mode] aside.tag-top > .content > header aside ul li:before {
     background: #cad0d0!important
 }
-.vue-simple-spinner {
+[data-night-mode] .vue-simple-spinner {
     border-color: #cad0d0 #2c2c2c #2c2c2c!important
 }
 [data-night-mode] .entry.reply section.entry-photo figure,
