@@ -8,6 +8,7 @@
     --gullGray: #cad0d0;
     --tuna: #c4c8c9;
     --abbey: #c4c8c9;
+    --athensGray: #3c3c3c;
     --squeeze: rgba(var(--blackishRGB), 0.025)
 }
 [data-night-mode] article.link-article,
@@ -168,8 +169,6 @@
 }
 [data-night-mode] .switch input:checked + label strong i:first-child,
 [data-night-mode] section.entry.reply.highlighted,
-[data-night-mode] section.bucket-create-page section.chips li,
-[data-night-mode] section.bucket-edit-page section.chips li,
 [data-night-mode] section.entry-stream-skeleton > .comments > article:nth-child(odd) {
     background: #3c3c3c!important
 }
