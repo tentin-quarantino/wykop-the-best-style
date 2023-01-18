@@ -136,7 +136,7 @@
     background: #313131!important
 }
 [data-night-mode] article.link-article > footer:before,
-section.entry-photo figure:after {
+[data-night-mode] section.entry-photo figure:after {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(var(--whitishRGB), 0)), to(#1c1c1c));
     background: linear-gradient(to bottom, rgba(var(--whitishRGB), 0) 0, #1c1c1c 100%)!important
 }
@@ -168,7 +168,7 @@ section.entry-photo figure:after {
 }
 [data-night-mode] .switch input:checked + label strong i:first-child,
 [data-night-mode] section.entry.reply.highlighted,
-section.entry-stream-skeleton > .comments > article:nth-child(odd) {
+[data-night-mode] section.entry-stream-skeleton > .comments > article:nth-child(odd) {
     background: #3c3c3c!important
 }
 [data-night-mode] .edit-wrapper > .content > section.entry-content > .wrapper blockquote,
@@ -181,7 +181,7 @@ section.entry-stream-skeleton > .comments > article:nth-child(odd) {
     background: #1c1c1c!important
 }
 [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown,
-section.editor > header > ul > li.lenny-face ul.menu-dropdown {
+[data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown {
     height: auto
 }
 [data-night-mode] section.entry-voters ul {
