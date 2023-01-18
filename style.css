@@ -168,11 +168,13 @@
 }
 [data-night-mode] .switch input:checked + label strong i:first-child,
 [data-night-mode] section.entry.reply.highlighted,
+[data-night-mode] section.bucket-create-page section.chips li,
 [data-night-mode] section.entry-stream-skeleton > .comments > article:nth-child(odd) {
     background: #3c3c3c!important
 }
 [data-night-mode] .edit-wrapper > .content > section.entry-content > .wrapper blockquote,
 [data-night-mode] .phone input,
+[data-night-mode] .bucket-create-page input,
 [data-night-mode] .settings-page input,
 [data-night-mode] .settings-page select,
 [data-night-mode] .settings-page textarea,
@@ -201,14 +203,10 @@
     background: #1c1c1c
 }
 [data-night-mode] .messages-page section.entry-content .wrapper blockquote,
-[data-night-mode] section.entry-content[data-v-725caa02] .wrapper code,
 [data-night-mode] .phone .vue-tel-input,
 [data-night-mode] section.entry > section.editor textarea,
 [data-night-mode] section.violations-block > section {
     background: #1c1c1c
-}
-[data-night-mode] section.entry-content[data-v-725caa02] .wrapper code {
-    border: none
 }
 [data-night-mode] aside.tag-top > .content > header aside ul li:before {
     background: #cad0d0!important
