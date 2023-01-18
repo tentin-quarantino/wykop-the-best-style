@@ -232,7 +232,7 @@ section.editor > header > ul > li.lenny-face ul.menu-dropdown {
     border: none!important
 }
 [data-night-mode] section.link-block {
-    box-shadow: 0 0 0 1px #1c1c1!important;
+    box-shadow: 0 0 0 1px #1c1c1c!important;
     -webkit-box-shadow: 0 0 0 1px #1c1c1c!important
 }
 [data-night-mode] section.settings-page > nav ul li a:before {
