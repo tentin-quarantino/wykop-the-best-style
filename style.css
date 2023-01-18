@@ -300,12 +300,19 @@
 [data-night-mode] section.search-input form .popper-button button {
     background: #cad0d0
 }
-[data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer {
+[data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer,
+[data-night-mode] section.microblog section.editor textarea::-webkit-resizer {
     background-image: url(https://github.com/tentin-quarantino/wykop-the-best-style/raw/main/resizer.png)!important;
     background-size: cover;
+}
+[data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer {
     background-color: #1c1c1c!important
+}
+[data-night-mode] section.microblog section.editor textarea::-webkit-resizer {
+    background-color: #2c2c2c!important
 }
 [data-night-mode] section.editor>.content textarea {
     resize: vertical;
-    max-height: none
+    max-height: none;
 }
+
