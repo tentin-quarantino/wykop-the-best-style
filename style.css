@@ -318,4 +318,18 @@
     resize: vertical;
     max-height: none;
 }
-
+[data-night-mode] section.survey {
+    border: 1px solid #1c1c1c!important;
+    background: #1c1c1c!important
+}
+[data-night-mode] section.survey>.content:before, 
+[data-night-mode] section.survey>.content:after {
+    background: #1c1c1c!important
+}
+[data-night-mode] section.survey>.content ul li i {
+    background: #3c3c3c!important;
+    border: none!important
+}
+[data-night-mode] section.survey>.content ul li[data-v-a619d144]:hover {
+    border-color: #3c3c3c
+}
