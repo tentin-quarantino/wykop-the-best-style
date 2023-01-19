@@ -144,8 +144,8 @@
     background: linear-gradient(to bottom, rgba(var(--whitishRGB), 0) 0, #1c1c1c 100%)!important
 }
 [data-night-mode] section.entry-content .wrapper code {
-    border: 1px solid #1c1c1c;
-    background: #1c1c1c
+    border: 1px solid #1c1c1c!important;
+    background: #1c1c1c!important
 }
 [data-night-mode] section.entry > article:hover,
 [data-night-mode] section.link-block > section > article section.info > span:after {
