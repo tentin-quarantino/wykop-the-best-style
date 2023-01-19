@@ -79,7 +79,7 @@
 [data-night-mode] li.reply::before {
     background: #767676!important
 }
-[data-night-mode] li.favourite path.border {
+[data-night-mode] section.entry li.favourite path.border {
     fill: #767676!important
 }
 [data-night-mode] header > .right path {
@@ -387,4 +387,7 @@
 }
 [data-night-mode] section.vote-box:not(.voted) .dig button {
     color: var(--whitish)!important
+}
+[data-night-mode] .content>section.info time.date {
+    color: var(--steelBluish)
 }
