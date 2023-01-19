@@ -284,6 +284,9 @@
 [data-night-mode] section.modal input {
     background-color: #1c1c1c!important
 }
+[data-night-mode] section.modal input::placeholder {
+    color: #666
+}
 [data-night-mode] section.file .upload span {
     color: #cad0d0
 }
@@ -488,4 +491,8 @@
 [data-night-mode] section.inline-autocomplete {
     -webkit-box-shadow: 0 5px 26px 5px #1c1c1cc9;
     box-shadow: 0 5px 26px 5px #1c1c1cc9
+}
+[data-night-mode] ul.menu-dropdown {
+    -webkit-box-shadow: 0 4px 4px #1c1c1cc9;
+    box-shadow: 0 4px 4px #1c1c1cc9
 }
