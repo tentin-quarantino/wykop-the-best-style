@@ -364,3 +364,9 @@
 [data-night-mode] section.link-block>section>article section.info>p a:visited{
     color: #7b7b7b
 }
+[data-night-mode] nav.new-pagination.hash ul li.disabled a {
+    color: #505050
+}
+[data-night-mode] nav.new-pagination.hash ul li.disabled a:after {
+    background: #505050
+}
