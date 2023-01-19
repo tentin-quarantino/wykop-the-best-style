@@ -296,10 +296,10 @@
     background: #2c2c2c!important
 }
 [data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong {
-    color: var(--apple)
+    color: #39a684
 }
 [data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong:before {
-    background: var(--apple)
+    background: #39a684
 }
 [data-night-mode] section.search-input form .popper-button button {
     background: #cad0d0
