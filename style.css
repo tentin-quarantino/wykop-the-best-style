@@ -370,3 +370,9 @@
 [data-night-mode] nav.new-pagination.hash ul li.disabled a:after {
     background: #505050
 }
+[data-night-mode] nav.new-pagination.number li.prev.disabled>span:after, 
+[data-night-mode] nav.new-pagination.number li.prev.disabled a:after, 
+[data-night-mode] nav.new-pagination.number li.next.disabled>span:after, 
+[data-night-mode] nav.new-pagination.number li.next.disabled a:after {
+    background: #505050!important
+}
