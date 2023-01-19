@@ -342,7 +342,7 @@
     resize: vertical;
     max-height: none;
 }
-[data-night-mode] section.survey {
+[data-night-mode] section.survey:not(.modal) {
     border: 1px solid #1c1c1c!important;
     background: #1c1c1c!important
 }
