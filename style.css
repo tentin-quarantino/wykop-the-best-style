@@ -461,7 +461,8 @@
 [data-night-mode] nav.mobile-navbar>ul>li a {
     color: #cad0d0
 }
-[data-night-mode] section.rating-box>ul li.plus {
+[data-night-mode] section.rating-box>ul li.plus,
+[data-night-mode] section.rating-box>ul li.minus {
     min-width: max-content
 }
 [data-night-mode] .cool-lightbox {
