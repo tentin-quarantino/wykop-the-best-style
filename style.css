@@ -89,9 +89,9 @@
     font-weight: 700;
     font-size: 14px
 }
-[data-night-mode] .last .username > span {
-    font-size: 12px;
-    color: #7b7b7b!important
+[data-night-mode] section.entry-voters ul li a.username span, 
+[data-night-mode] section > article .info > span a.username span {
+    color: inherit!important
 }
 [data-night-mode] li.account > ul > li:hover a,
 [data-night-mode] li > section section.notifications > .stream > .content > .notify:hover,
@@ -152,9 +152,7 @@
     background: 0 0
 }
 [data-night-mode] .entries-sidebar a time.date,
-[data-night-mode] .entry-voters a.username,
 [data-night-mode] section.entry-voters ul,
-[data-night-mode] section.entry-voters ul li a.username span,
 [data-night-mode] section.settings-page > nav ul li a,
 [data-night-mode] section.settings-page > nav ul li + li a {
     color: #7b7b7b
