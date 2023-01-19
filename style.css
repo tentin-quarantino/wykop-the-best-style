@@ -442,3 +442,9 @@
     -webkit-box-shadow: 0px 3px 5px 0 #1c1c1c91!important;
     box-shadow: 0px 3px 5px 0 #1c1c1c91!important
 }
+[data-night-mode] .open-left-panel .left-panel + div {
+    background: #1c1c1cc9
+}
+[data-night-mode] .v--modal-overlay {
+    background: #1c1c1cc9;
+}
