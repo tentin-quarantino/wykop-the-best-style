@@ -89,9 +89,9 @@
     font-weight: 700;
     font-size: 14px
 }
-[data-night-mode] section.entry-voters ul li a.username span, 
-[data-night-mode] section > article .info > span a.username span {
-    color: inherit!important
+[data-night-mode] section.entry-voters ul li a.username span:not(:hover), 
+[data-night-mode] section > article .info > span a.username spanspan:not(:hover) {
+    color: #7b7b7b!important
 }
 [data-night-mode] li.account > ul > li:hover a,
 [data-night-mode] li > section section.notifications > .stream > .content > .notify:hover,
@@ -423,16 +423,6 @@
 }
 [data-night-mode] section.entry>article .edit-wrapper>* ~ * {
     margin-top: 5px;
-}
-[data-night-mode] section.entry-voters ul:hover {
-    max-height: 500px;
-    transition: 1s ease-out;
-    overflow-y: scroll
-}
-[data-night-mode] section.entry-voters ul {
-    max-height: 3px;
-    transition: 1s ease-out;
-    overflow: hidden
 }
 [data-night-mode] a.avatar figure.male:before {
     background: #4983ad
