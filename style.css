@@ -376,3 +376,15 @@
 [data-night-mode] nav.new-pagination.number li.next.disabled a:after {
     background: #505050!important
 }
+[data-night-mode] section.vote-box.voted .dig button {
+    background-color: #505050
+}
+[data-night-mode] section.vote-box.voted .dig p {
+    background: #505050
+}
+[data-night-mode] section.vote-box .dig button {
+    color: #cad0d0
+}
+[data-night-mode] section.vote-box:not(.voted) .dig button {
+    color: var(--whitish)!important
+}
