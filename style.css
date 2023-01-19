@@ -527,3 +527,12 @@
 [data-night-mode] section.entry section.editor textarea {
     font-family: "Helvetica"
 }
+[data-night-mode] section.entry>.comments>footer {
+    margin-top: -14px
+}
+[data-night-mode] section.entry>.comments>footer>div>button.target:hover {
+    background: #2c2c2c
+}
+[data-night-mode] section.entry>.comments>footer>div>button.target {
+    background: #3c3c3c
+}
