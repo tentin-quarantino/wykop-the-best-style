@@ -406,14 +406,3 @@ section.link-block.mobile>section>article>.content section.info+figure:first-of-
     background: #505050;
     color: #cad0d0
 }
-[data-night-mode] article {
-    pointer-events: none
-}
-[data-night-mode] article a,
-[data-night-mode] article button,
-[data-night-mode] article blocquote,
-[data-night-mode] article code,
-[data-night-mode] article img,
-[data-night-mode] article ul li {
-    pointer-events: all
-}
