@@ -420,7 +420,8 @@
 [data-night-mode] section.vote-box:not(.voted) .dig button {
     color: var(--whitish)!important
 }
-[data-night-mode] .content>section.info time.date {
+[data-night-mode] .content>section.info time.date,
+[data-night-mode] section.link-block>section>article section.info>span time {
     color: var(--steelBluish)
 }
 [data-night-mode] section.metrics>.content ul li:before,
