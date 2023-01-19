@@ -196,6 +196,11 @@
 [data-night-mode] .settings-page input,
 [data-night-mode] .settings-page select,
 [data-night-mode] .settings-page textarea,
+[data-night-mode] .contact input,
+[data-night-mode] .contact select,
+[data-night-mode] .contact textarea,
+[data-night-mode] .contact .upload:hover,
+[data-night-mode] .contact .upload.over,
 [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown,
 [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown li:nth-child(2n) {
     background: #1c1c1c!important
