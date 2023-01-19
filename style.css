@@ -99,10 +99,6 @@
 [data-night-mode] header > .right path {
     fill: #cad0d0
 }
-[data-night-mode] .right .username > span {
-    font-weight: 700;
-    font-size: 14px
-}
 [data-night-mode] section.entry-voters ul li a.username>span {
     font-weight: normal
 }
