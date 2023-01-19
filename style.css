@@ -145,7 +145,7 @@
     box-shadow: none!important
 }
 [data-night-mode] section.entry > .comments {
-    margin: 22px 0 0 32px
+    margin: 16px 0 0 52px
 }
 [data-night-mode] .v--modal-box,
 [data-night-mode] section.modal > footer {
@@ -221,8 +221,8 @@
 }
 [data-night-mode] section.entry > .comments + section.editor,
 [data-night-mode] section.entry > section.editor {
-    margin: 6px 0 9px 31px;
-    width: calc(100% - 23px);
+    margin: 6px 0 9px 52px;
+    width: calc(100% - 52px);
     background: #1c1c1c
 }
 [data-night-mode] .messages-page section.entry-content .wrapper blockquote,
