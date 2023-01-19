@@ -498,3 +498,6 @@
     -webkit-box-shadow: 0 4px 4px #1c1c1cc9;
     box-shadow: 0 4px 4px #1c1c1cc9
 }
+[data-night-mode] nav.new-pagination.number li:not(.prev):not(.next).active a {
+    color: #f06239;
+}
