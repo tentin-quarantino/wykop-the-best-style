@@ -342,3 +342,19 @@
     background: #505050;
     color: #cad0d0
 }
+[data-night-mode] section.search-input form>a {
+    -webkit-box-shadow: 0 5px 4px 0 #1c1c1c!important;
+    box-shadow: 0 5px 4px 0 #1c1c1c!important;
+    background: #2c2c2c!important
+}
+[data-night-mode] aside.advanced>.content section.options ul li label {
+    color: #cad0d0;
+    border: 1px solid #505050;
+}
+[data-night-mode] aside.advanced>.content section input,
+[data-night-mode] aside.advanced>.content section.select select {
+    background: #1c1c1c!important
+}
+[data-night-mode] aside.advanced>.content section input::placeholder {
+    color: #666666!important
+}
