@@ -464,3 +464,10 @@
 [data-night-mode] section.rating-box>ul li.plus {
     min-width: max-content
 }
+[data-night-mode] .cool-lightbox {
+    background: #1c1c1cc9!important
+}
+[data-night-mode] .cool-lightbox .cool-lightbox__slide img {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
