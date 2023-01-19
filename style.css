@@ -523,6 +523,7 @@
     border-color: #505050 transparent transparent transparent!important
 }
 [data-night-mode] section.entry-content,
-[data-night-mode] section.entry .edit-wrapper {
+[data-night-mode] section.entry .edit-wrapper > .survey,
+[data-night-mode] section.entry section.editor textarea {
     font-family: "Helvetica"
 }
