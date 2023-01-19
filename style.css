@@ -359,3 +359,7 @@
 [data-night-mode] aside.advanced>.content section input::placeholder {
     color: #666666!important
 }
+[data-night-mode] section.link-block>section>article>header h2 a:visited,
+[data-night-mode] section.link-block>section>article section.info>p a:visited{
+    color: #7b7b7b
+}
