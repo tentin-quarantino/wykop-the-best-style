@@ -79,7 +79,7 @@
 [data-night-mode] li.reply::before {
     background: #767676!important
 }
-[data-night-mode] li.favourite path.border {
+[data-night-mode] section.entry li.favourite path.border {
     fill: #767676!important
 }
 [data-night-mode] header > .right path {
@@ -95,6 +95,7 @@
 }
 [data-night-mode] li.account > ul > li:hover a,
 [data-night-mode] li > section section.notifications > .stream > .content > .notify:hover,
+[data-night-mode] li>section section.notifications>.stream>.content>.notify.read:hover,
 [data-night-mode] section.entry.reply > article,
 [data-night-mode] section.notifications section.stream > .content > section.notify:hover:before,
 [data-night-mode] ul.dropdown:not(.clear-styles) ul.actions li:hover {
@@ -143,8 +144,8 @@
     background: linear-gradient(to bottom, rgba(var(--whitishRGB), 0) 0, #1c1c1c 100%)!important
 }
 [data-night-mode] section.entry-content .wrapper code {
-    border: 1px solid #1c1c1c;
-    background: #1c1c1c
+    border: 1px solid #1c1c1c!important;
+    background: #1c1c1c!important
 }
 [data-night-mode] section.entry > article:hover,
 [data-night-mode] section.link-block > section > article section.info > span:after {
@@ -205,13 +206,13 @@
     background: #1c1c1c
 }
 [data-night-mode] .messages-page section.entry-content .wrapper blockquote,
-[data-night-mode] section.entry-content[data-v-725caa02] .wrapper code,
+[data-night-mode] section.entry-content .wrapper code,
 [data-night-mode] .phone .vue-tel-input,
 [data-night-mode] section.entry > section.editor textarea,
 [data-night-mode] section.violations-block > section {
     background: #1c1c1c
 }
-[data-night-mode] section.entry-content[data-v-725caa02] .wrapper code {
+[data-night-mode] section.entry-content .wrapper code {
     border: none
 }
 [data-night-mode] aside.tag-top > .content > header aside ul li:before {
@@ -271,7 +272,8 @@
 [data-night-mode] section.file .upload span {
     color: #cad0d0
 }
-[data-night-mode] section.notifications section.stream>.content>section.notify {
+[data-night-mode] section.notifications section.stream>.content>section.notify,
+[data-night-mode] section.notifications section.stream>.content>section.notify.read {
     background: #1c1c1c!important
 }
 [data-night-mode] li>section section.stream>.content>section.item.unread:before {
@@ -359,10 +361,10 @@
     background: #2c2c2c!important
 }
 [data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong {
-    color: var(--apple)
+    color: #39a684
 }
 [data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong:before {
-    background: var(--apple)
+    background: #39a684
 }
 [data-night-mode] section.search-input form .popper-button button {
     background: #cad0d0
@@ -396,7 +398,7 @@
     background: #3c3c3c!important;
     border: none!important
 }
-[data-night-mode] section.survey>.content ul li[data-v-a619d144]:hover {
+[data-night-mode] section.survey>.content ul li:hover {
     border-color: #3c3c3c
 }
 [data-night-mode] .popper-button.onboarding-btn {
@@ -405,4 +407,55 @@
 [data-night-mode] section.new-entry>div.button>.target {
     background: #505050;
     color: #cad0d0
+}
+[data-night-mode] section.search-input form>a {
+    -webkit-box-shadow: 0 5px 4px 0 #1c1c1c!important;
+    box-shadow: 0 5px 4px 0 #1c1c1c!important;
+    background: #2c2c2c!important
+}
+[data-night-mode] aside.advanced>.content section.options ul li label {
+    color: #cad0d0;
+    border: 1px solid #505050;
+}
+[data-night-mode] aside.advanced>.content section input,
+[data-night-mode] aside.advanced>.content section.select select {
+    background: #1c1c1c!important
+}
+[data-night-mode] aside.advanced>.content section input::placeholder {
+    color: #666666!important
+}
+[data-night-mode] section.link-block>section>article>header h2 a:visited,
+[data-night-mode] section.link-block>section>article section.info>p a:visited{
+    color: #7b7b7b
+}
+[data-night-mode] nav.new-pagination.hash ul li.disabled a {
+    color: #505050
+}
+[data-night-mode] nav.new-pagination.hash ul li.disabled a:after {
+    background: #505050
+}
+[data-night-mode] nav.new-pagination.number li.prev.disabled>span:after, 
+[data-night-mode] nav.new-pagination.number li.prev.disabled a:after, 
+[data-night-mode] nav.new-pagination.number li.next.disabled>span:after, 
+[data-night-mode] nav.new-pagination.number li.next.disabled a:after {
+    background: #505050!important
+}
+[data-night-mode] section.vote-box.voted .dig button {
+    background-color: #505050
+}
+[data-night-mode] section.vote-box.voted .dig p {
+    background: #505050
+}
+[data-night-mode] section.vote-box .dig button {
+    color: #cad0d0
+}
+[data-night-mode] section.vote-box:not(.voted) .dig button {
+    color: var(--whitish)!important
+}
+[data-night-mode] .content>section.info time.date {
+    color: var(--steelBluish)
+}
+[data-night-mode] section.metrics>.content ul li:before,
+[data-night-mode] footer.footer>nav ul li.more:after{
+    background: var(--abbey)
 }
