@@ -272,7 +272,8 @@
 [data-night-mode] section.file .upload span {
     color: #cad0d0
 }
-[data-night-mode] section.notifications section.stream>.content>section.notify {
+[data-night-mode] section.notifications section.stream>.content>section.notify,
+[data-night-mode] section.notifications section.stream>.content>section.notify.read {
     background: #1c1c1c!important
 }
 [data-night-mode] li>section section.stream>.content>section.item.unread:before {
