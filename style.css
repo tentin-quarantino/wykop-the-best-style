@@ -449,3 +449,9 @@
 [data-night-mode] section.rating-box>ul+.buttons {
     margin-left: 8px
 }
+[data-night-mode] nav.mobile-navbar>ul>li a>span:after {
+    background: #cad0d0
+}
+[data-night-mode] nav.mobile-navbar>ul>li a {
+    color: #cad0d0
+}
