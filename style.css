@@ -424,6 +424,7 @@
 [data-night-mode] section.link-block>section>article section.info>span time {
     color: var(--steelBluish)
 }
+[data-night-mode] footer.footer > nav ul li:not(:last-of-type):after,
 [data-night-mode] section.metrics>.content ul li:before,
 [data-night-mode] footer.footer>nav ul li.more:after{
     background: var(--abbey)
