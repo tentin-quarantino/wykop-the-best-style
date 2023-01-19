@@ -282,7 +282,8 @@
 }
 /* START: Obrazek znaleziska po lewej */
 [data-night-mode] .home section.link-block > section > article,
-[data-night-mode] .upcoming section.link-block > section > article {
+[data-night-mode] .upcoming section.link-block > section > article,
+[data-night-mode] .search-page section.link-block > section > article {
     padding: 24px 16px 25px 260px !important;
 }
 [data-night-mode] .link-page section.link-block > section > article {
@@ -290,7 +291,8 @@
 }
 [data-night-mode] .home section.link-block > section > article figure,
 [data-night-mode] .upcoming section.link-block > section > article figure,
-[data-night-mode] .link-page section.link-block > section > article figure {
+[data-night-mode] .link-page section.link-block > section > article figure,
+[data-night-mode] .search-page section.link-block > section > article figure {
     right: auto !important;
     left: 16px;
 }
