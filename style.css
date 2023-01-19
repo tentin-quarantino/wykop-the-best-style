@@ -289,10 +289,10 @@
 [data-night-mode] .favourites-page section.link-block > section > article,
 [data-night-mode] .observed-page section.link-block > section > article,
 [data-night-mode] .search-page section.link-block > section > article {
-    padding: 24px 16px 25px 260px !important;
+    padding: 24px 16px 25px 260px;
 }
-[data-night-mode] .link-page section.link-block:not(.no-thumbnail) > section > article {
-    padding: 24px 16px 25px 340px !important;
+[data-night-mode] .link-page section.link-block:not(.no-thumbnail):not(.mobile) > section > article {
+    padding: 24px 16px 25px 340px;
 }
 [data-night-mode] .home section.link-block > section > article figure,
 [data-night-mode] .upcoming section.link-block > section > article figure,
@@ -303,8 +303,45 @@
 [data-night-mode] .favourites-page section.link-block > section > article figure,
 [data-night-mode] .observed-page section.link-block > section > article figure,
 [data-night-mode] .search-page section.link-block > section > article figure {
-    right: auto !important;
+    right: auto;
     left: 16px;
+}
+@media (max-width: 1440px) {
+    body>section.open-left-panel:not(.is-mobile) section.link-block.detailed:not(.no-thumbnail)>section>article:first-of-type {
+        padding-right: 16px;
+        padding-left: 260px;
+    }
+}
+@media (max-width: 1140px) {
+    body>section.is-mobile section.link-block.detailed:not(.no-thumbnail):not(.mobile)>section>article:first-of-type {
+        padding-right: 16px;
+        padding-left: 170px;
+    }
+}
+@media (max-width: 1024px) {
+    body>section.is-mobile section.link-block.detailed:not(.no-thumbnail):not(.mobile)>section>article:first-of-type {
+        padding-right: 16px;
+        padding-left: 340px;
+    }
+}
+@media (max-width: 896px) {
+    body>section.is-mobile section.link-block.detailed:not(.no-thumbnail):not(.mobile)>section>article:first-of-type {
+        padding-right: 16px;
+        padding-left: 260px;
+    }
+}
+@media (max-width: 767px) {
+    body>section.is-mobile section.link-block.detailed:not(.no-thumbnail):not(.mobile)>section>article:first-of-type {
+        padding-right: 16px;
+        padding-left: 170px;
+    }
+}
+section.link-block.mobile>section>article>.content {
+    flex-direction: row-reverse;
+}
+section.link-block.mobile>section>article>.content section.info+figure:first-of-type {
+    margin-right: 32px;
+    margin-left: -16px;
 }
 /* END: Obrazek znaleziska po lewej */
 [data-night-mode] section.search-results-dropdown {
