@@ -95,6 +95,7 @@
 }
 [data-night-mode] li.account > ul > li:hover a,
 [data-night-mode] li > section section.notifications > .stream > .content > .notify:hover,
+[data-night-mode] li>section section.notifications>.stream>.content>.notify.read:hover,
 [data-night-mode] section.entry.reply > article,
 [data-night-mode] section.notifications section.stream > .content > section.notify:hover:before,
 [data-night-mode] ul.dropdown:not(.clear-styles) ul.actions li:hover {
