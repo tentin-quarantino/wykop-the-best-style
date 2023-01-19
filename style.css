@@ -523,7 +523,8 @@
 [data-night-mode] section.popper li:hover {
     background: #505050 !important;
 }
-[data-night-mode] section.popper a:hover {
+[data-night-mode] section.popper a:hover,
+[data-night-mode] section.popper button:hover {
     background: #1c1c1c !important;
 }
 [data-night-mode] section.popper[x-placement^="top"] .popper__arrow {
