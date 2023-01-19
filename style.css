@@ -1,3 +1,17 @@
+@media (max-width: 533px) {
+    [data-night-mode] section.entry>article>header {
+        margin-top: 0
+    }
+    [data-night-mode] section.entry>article>header>div.right>div+div {
+        position: initial
+    }
+    [data-night-mode] section.entry>article>header {
+        max-height: none!important
+    }
+    [data-night-mode] section.entry>article>header>div.right>div>span {
+        line-height: 2
+    }
+}
 [data-night-mode],
 [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after,
 [data-night-mode] header.header > .right > nav > ul > li > a.new:after,
@@ -89,8 +103,11 @@
     font-weight: 700;
     font-size: 14px
 }
-[data-night-mode] .last .username > span {
-    font-size: 12px;
+[data-night-mode] section.entry-voters ul li a.username>span {
+    font-weight: normal
+}
+[data-night-mode] section.entry-voters ul li a.username span:not(:hover), 
+[data-night-mode] section > article .info > span a.username spanspan:not(:hover) {
     color: #7b7b7b!important
 }
 [data-night-mode] li.account > ul > li:hover a,
@@ -128,7 +145,7 @@
     box-shadow: none!important
 }
 [data-night-mode] section.entry > .comments {
-    margin: 22px 0 0 32px
+    margin: 16px 0 0 52px
 }
 [data-night-mode] .v--modal-box,
 [data-night-mode] section.modal > footer {
@@ -152,9 +169,7 @@
     background: 0 0
 }
 [data-night-mode] .entries-sidebar a time.date,
-[data-night-mode] .entry-voters a.username,
 [data-night-mode] section.entry-voters ul,
-[data-night-mode] section.entry-voters ul li a.username span,
 [data-night-mode] section.settings-page > nav ul li a,
 [data-night-mode] section.settings-page > nav ul li + li a {
     color: #7b7b7b
@@ -181,6 +196,11 @@
 [data-night-mode] .settings-page input,
 [data-night-mode] .settings-page select,
 [data-night-mode] .settings-page textarea,
+[data-night-mode] .contact input,
+[data-night-mode] .contact select,
+[data-night-mode] .contact textarea,
+[data-night-mode] .contact .upload:hover,
+[data-night-mode] .contact .upload.over,
 [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown,
 [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown li:nth-child(2n) {
     background: #1c1c1c!important
@@ -201,8 +221,8 @@
 }
 [data-night-mode] section.entry > .comments + section.editor,
 [data-night-mode] section.entry > section.editor {
-    margin: 6px 0 9px 31px;
-    width: calc(100% - 23px);
+    margin: 6px 0 9px 52px;
+    width: calc(100% - 52px);
     background: #1c1c1c
 }
 [data-night-mode] .messages-page section.entry-content .wrapper blockquote,
@@ -241,6 +261,9 @@
 [data-night-mode] .pm.dropdown > a:after {
     border: none!important
 }
+[data-night-mode] .messages-page section.message > article.me > div.content {
+    background: #1c1c1c
+}
 [data-night-mode] section.link-block {
     box-shadow: 0 0 0 1px #1c1c1c!important;
     -webkit-box-shadow: 0 0 0 1px #1c1c1c!important
@@ -268,6 +291,9 @@
 }
 [data-night-mode] section.modal input {
     background-color: #1c1c1c!important
+}
+[data-night-mode] section.modal input::placeholder {
+    color: #666
 }
 [data-night-mode] section.file .upload span {
     color: #cad0d0
@@ -371,7 +397,10 @@
 }
 [data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer,
 [data-night-mode] section.entry section.editor.expand.inner textarea::-webkit-resizer,
-[data-night-mode] section.microblog section.editor textarea::-webkit-resizer {
+[data-night-mode] section.microblog section.editor textarea::-webkit-resizer,
+[data-night-mode] section.messages section.editor textarea::-webkit-resizer,
+[data-night-mode] section.tag-page section.editor textarea::-webkit-resizer,
+[data-night-mode] section.link-page section.editor textarea::-webkit-resizer {
     background-image: url(https://github.com/tentin-quarantino/wykop-the-best-style/raw/main/resizer.png)!important;
     background-size: cover;
 }
@@ -379,14 +408,17 @@
 [data-night-mode] section.entry section.editor.expand.inner textarea::-webkit-resizer{
     background-color: #1c1c1c!important
 }
-[data-night-mode] section.microblog section.editor textarea::-webkit-resizer {
+[data-night-mode] section.microblog section.editor textarea::-webkit-resizer,
+[data-night-mode] section.messages section.editor textarea::-webkit-resizer,
+[data-night-mode] section.tag-page section.editor textarea::-webkit-resizer,
+[data-night-mode] section.link-page section.editor textarea::-webkit-resizer {
     background-color: #2c2c2c!important
 }
 [data-night-mode] section.editor>.content textarea {
     resize: vertical;
     max-height: none;
 }
-[data-night-mode] section.survey {
+[data-night-mode] section.survey:not(.modal) {
     border: 1px solid #1c1c1c!important;
     background: #1c1c1c!important
 }
@@ -452,10 +484,110 @@
 [data-night-mode] section.vote-box:not(.voted) .dig button {
     color: var(--whitish)!important
 }
-[data-night-mode] .content>section.info time.date {
+[data-night-mode] .content>section.info time.date,
+[data-night-mode] section.link-block>section>article section.info>span time {
     color: var(--steelBluish)
 }
+[data-night-mode] footer.footer > nav ul li:not(:last-of-type):after,
 [data-night-mode] section.metrics>.content ul li:before,
 [data-night-mode] footer.footer>nav ul li.more:after{
     background: var(--abbey)
+}
+[data-night-mode] section.entry>article>header {
+    align-items: flex-start;
+    column-gap: 16px
+}
+[data-night-mode] section.entry a.avatar {
+    height: 36px!important;
+    width: 36px!important
+}
+[data-night-mode] section.entry>article .edit-wrapper {
+    margin-left: 52px
+}
+[data-night-mode] section.entry>article>header+.edit-wrapper {
+    margin-top: 0
+}
+[data-night-mode] section.entry>article>header {
+    -webkit-transform: none;
+    transform: none;
+    max-height: 20px
+}
+[data-night-mode] section.entry>article>header>div.right>div>span {
+    color: #767676
+}
+[data-night-mode] section.entry>article>header>div.right {
+    line-height: 10px
+}
+[data-night-mode] section.entry>article>header>div.right>div+div {
+    margin: 0 0 0 8px
+}
+[data-night-mode] section.entry>article .edit-wrapper>* ~ * {
+    margin-top: 5px;
+}
+[data-night-mode] a.avatar figure.male:before {
+    background: #4983ad
+}
+[data-night-mode] section.stream>.content>section.entry.reply {
+    margin-top: 8px;
+    -webkit-box-shadow: 0px 3px 5px 0 #1c1c1c91!important;
+    box-shadow: 0px 3px 5px 0 #1c1c1c91!important
+}
+[data-night-mode] .open-left-panel .left-panel + div {
+    background: #1c1c1cc9
+}
+[data-night-mode] .v--modal-overlay {
+    background: #1c1c1cc9;
+}
+[data-night-mode] section.rating-box>ul+.buttons {
+    margin-left: 8px
+}
+[data-night-mode] nav.mobile-navbar>ul>li a>span:after {
+    background: #cad0d0
+}
+[data-night-mode] nav.mobile-navbar>ul>li a {
+    color: #cad0d0
+}
+[data-night-mode] section.rating-box>ul li.plus,
+[data-night-mode] section.rating-box>ul li.minus {
+    min-width: max-content
+}
+[data-night-mode] .cool-lightbox {
+    background: #1c1c1cc9!important
+}
+[data-night-mode] .cool-lightbox .cool-lightbox__slide img {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+[data-night-mode] .conversation-list .date {
+	color: #aaa !important;
+}
+[data-night-mode] .conversation-list> section .search, 
+[data-night-mode] .conversation-list .popper-button button:not(:hover) {
+	background: var(--abbey)!important
+}
+[data-night-mode] section.inline-autocomplete {
+    -webkit-box-shadow: 0 5px 26px 5px #1c1c1cc9;
+    box-shadow: 0 5px 26px 5px #1c1c1cc9
+}
+[data-night-mode] ul.menu-dropdown {
+    -webkit-box-shadow: 0 4px 4px #1c1c1cc9;
+    box-shadow: 0 4px 4px #1c1c1cc9
+}
+[data-night-mode] nav.new-pagination.number li:not(.prev):not(.next).active a {
+    color: #f06239;
+}
+[data-night-mode] section.popper.tag-actions,
+[data-night-mode] section.popper.domain-actions {
+    background: #3c3c3c
+}
+[data-night-mode] aside.hits-slider .swiper-container>button:hover {
+    background-color: #1c1c1cc9
+}
+[data-night-mode] section.popper .popper__arrow {
+    border-color: #505050 transparent transparent transparent!important
+}
+[data-night-mode] section.entry-content,
+[data-night-mode] section.entry .edit-wrapper > .survey,
+[data-night-mode] section.entry section.editor textarea {
+    font-family: "Helvetica"
 }
