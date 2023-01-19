@@ -503,3 +503,6 @@
 [data-night-mode] nav.new-pagination.number li:not(.prev):not(.next).active a {
     color: #f06239;
 }
+[data-night-mode] section.popper.tag-actions {
+    background: #3c3c3c
+}
