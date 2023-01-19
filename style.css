@@ -391,3 +391,7 @@
 [data-night-mode] .content>section.info time.date {
     color: var(--steelBluish)
 }
+[data-night-mode] section.metrics>.content ul li:before,
+[data-night-mode] footer.footer>nav ul li.more:after{
+    background: var(--abbey)
+}
