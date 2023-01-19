@@ -291,7 +291,7 @@
 [data-night-mode] .search-page section.link-block > section > article {
     padding: 24px 16px 25px 260px !important;
 }
-[data-night-mode] .link-page section.link-block > section > article {
+[data-night-mode] .link-page section.link-block:not(.no-thumbnail) > section > article {
     padding: 24px 16px 25px 340px !important;
 }
 [data-night-mode] .home section.link-block > section > article figure,
