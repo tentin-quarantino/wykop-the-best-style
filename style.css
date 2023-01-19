@@ -497,7 +497,6 @@
 [data-night-mode] .conversation-list .date {
 	color: #aaa !important;
 }
-
 [data-night-mode] .conversation-list> section .search, 
 [data-night-mode] .conversation-list .popper-button button:not(:hover) {
 	background: var(--abbey)!important
@@ -514,9 +513,12 @@
     color: #f06239;
 }
 [data-night-mode] section.popper.tag-actions,
-[data-night-mode] section.popper.domain-actions{
+[data-night-mode] section.popper.domain-actions {
     background: #3c3c3c
 }
 [data-night-mode] aside.hits-slider .swiper-container>button:hover {
     background-color: #1c1c1cc9
+}
+[data-night-mode] section.popper .popper__arrow {
+    border-color: #505050 transparent transparent transparent!important
 }
