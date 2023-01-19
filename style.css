@@ -304,11 +304,13 @@
     background: #cad0d0
 }
 [data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer,
+[data-night-mode] section.entry section.editor.expand.inner textarea::-webkit-resizer,
 [data-night-mode] section.microblog section.editor textarea::-webkit-resizer {
     background-image: url(https://github.com/tentin-quarantino/wykop-the-best-style/raw/main/resizer.png)!important;
     background-size: cover;
 }
-[data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer {
+[data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer,
+[data-night-mode] section.entry section.editor.expand.inner textarea::-webkit-resizer{
     background-color: #1c1c1c!important
 }
 [data-night-mode] section.microblog section.editor textarea::-webkit-resizer {
