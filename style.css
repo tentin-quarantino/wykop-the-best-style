@@ -438,3 +438,11 @@
 [data-night-mode] .v--modal-overlay {
     background: #1c1c1cc9;
 }
+@media (max-width: 533px) {
+    [data-night-mode] section.entry>article>header {
+        margin-top: 0
+    }
+    [data-night-mode] section.entry>article>header>div.right>div+div {
+        position: initial
+    }
+}
