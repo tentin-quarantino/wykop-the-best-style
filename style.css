@@ -484,7 +484,8 @@
     color: #cad0d0
 }
 [data-night-mode] section.rating-box>ul li.plus,
-[data-night-mode] section.rating-box>ul li.minus {
+[data-night-mode] section.rating-box>ul li.minus,
+[data-night-mode] section.rating-box>ul li {
     min-width: max-content
 }
 [data-night-mode] .cool-lightbox {
