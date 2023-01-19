@@ -485,3 +485,7 @@
 [data-night-mode] .conversation-list .popper-button button:not(:hover) {
 	background: var(--abbey)!important
 }
+[data-night-mode] section.inline-autocomplete {
+    -webkit-box-shadow: 0 5px 26px 5px #1c1c1cc9;
+    box-shadow: 0 5px 26px 5px #1c1c1cc9
+}
