@@ -338,3 +338,7 @@
 [data-night-mode] .popper-button.onboarding-btn {
     display: none
 }
+[data-night-mode] section.new-entry>div.button>.target {
+    background: #505050;
+    color: #cad0d0
+}
