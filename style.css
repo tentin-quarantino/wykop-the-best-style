@@ -1,3 +1,11 @@
+@media (max-width: 533px) {
+    [data-night-mode] section.entry>article>header {
+        margin-top: 0
+    }
+    [data-night-mode] section.entry>article>header>div.right>div+div {
+        position: initial
+    }
+}
 [data-night-mode],
 [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after,
 [data-night-mode] header.header > .right > nav > ul > li > a.new:after,
@@ -438,11 +446,6 @@
 [data-night-mode] .v--modal-overlay {
     background: #1c1c1cc9;
 }
-@media (max-width: 533px) {
-    [data-night-mode] section.entry>article>header {
-        margin-top: 0
-    }
-    [data-night-mode] section.entry>article>header>div.right>div+div {
-        position: initial
-    }
+[data-night-mode] section.rating-box>ul+.buttons {
+    margin-left: 8px
 }
