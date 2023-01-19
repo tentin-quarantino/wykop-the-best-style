@@ -11,6 +11,12 @@
     [data-night-mode] section.entry>article>header>div.right>div>span {
         line-height: 2
     }
+
+}
+@media (max-width: 720px) {
+    [data-night-mode] section.entry>.comments>footer {
+        margin-top: 8px!important
+    }
 }
 [data-night-mode],
 [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after,
