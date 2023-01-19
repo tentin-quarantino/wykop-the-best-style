@@ -333,3 +333,6 @@
 [data-night-mode] section.survey>.content ul li[data-v-a619d144]:hover {
     border-color: #3c3c3c
 }
+[data-night-mode] .popper-button.onboarding-btn {
+    display: none
+}
