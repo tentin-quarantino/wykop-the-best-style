@@ -506,3 +506,6 @@
 [data-night-mode] section.popper.tag-actions {
     background: #3c3c3c
 }
+[data-night-mode] aside.hits-slider .swiper-container>button:hover {
+    background-color: #1c1c1cc9
+}
