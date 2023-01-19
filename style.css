@@ -103,6 +103,9 @@
     font-weight: 700;
     font-size: 14px
 }
+[data-night-mode] section.entry-voters ul li a.username>span {
+    font-weight: normal
+}
 [data-night-mode] section.entry-voters ul li a.username span:not(:hover), 
 [data-night-mode] section > article .info > span a.username spanspan:not(:hover) {
     color: #7b7b7b!important
