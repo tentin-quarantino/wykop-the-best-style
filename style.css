@@ -395,3 +395,52 @@
 [data-night-mode] footer.footer>nav ul li.more:after{
     background: var(--abbey)
 }
+[data-night-mode] section.entry>article>header {
+    align-items: flex-start;
+    column-gap: 16px
+}
+[data-night-mode] section.entry a.avatar {
+    height: 36px!important;
+    width: 36px!important
+}
+[data-night-mode] section.entry>article .edit-wrapper {
+    margin-left: 52px
+}
+[data-night-mode] section.entry>article>header+.edit-wrapper {
+    margin-top: 0
+}
+[data-night-mode] section.entry>article>header {
+    -webkit-transform: none;
+    transform: none;
+    max-height: 20px
+}
+[data-night-mode] section.entry>article>header>div.right>div>span {
+    color: #767676
+}
+[data-night-mode] section.entry>article>header>div.right {
+    line-height: 10px
+}
+[data-night-mode] section.entry>article>header>div.right>div+div {
+    margin: 0 0 0 8px
+}
+[data-night-mode] section.entry>article .edit-wrapper>* ~ * {
+    margin-top: 5px;
+}
+[data-night-mode] section.entry-voters ul:hover {
+    max-height: 500px;
+    transition: 1s ease-out;
+    overflow-y: scroll
+}
+[data-night-mode] section.entry-voters ul {
+    max-height: 3px;
+    transition: 1s ease-out;
+    overflow: hidden
+}
+[data-night-mode] a.avatar figure.male:before {
+    background: #4983ad
+}
+[data-night-mode] section.stream>.content>section.entry.reply {
+    margin-top: 8px;
+    -webkit-box-shadow: 0px 3px 5px 0 #1c1c1c91!important;
+    box-shadow: 0px 3px 5px 0 #1c1c1c91!important
+}
