@@ -327,7 +327,8 @@
 [data-night-mode] section.entry section.editor.expand.inner textarea::-webkit-resizer,
 [data-night-mode] section.microblog section.editor textarea::-webkit-resizer,
 [data-night-mode] section.messages section.editor textarea::-webkit-resizer,
-[data-night-mode] section.tag-page section.editor textarea::-webkit-resizer {
+[data-night-mode] section.tag-page section.editor textarea::-webkit-resizer,
+[data-night-mode] section.link-page section.editor textarea::-webkit-resizer {
     background-image: url(https://github.com/tentin-quarantino/wykop-the-best-style/raw/main/resizer.png)!important;
     background-size: cover;
 }
@@ -337,7 +338,8 @@
 }
 [data-night-mode] section.microblog section.editor textarea::-webkit-resizer,
 [data-night-mode] section.messages section.editor textarea::-webkit-resizer,
-[data-night-mode] section.tag-page section.editor textarea::-webkit-resizer {
+[data-night-mode] section.tag-page section.editor textarea::-webkit-resizer,
+[data-night-mode] section.link-page section.editor textarea::-webkit-resizer {
     background-color: #2c2c2c!important
 }
 [data-night-mode] section.editor>.content textarea {
