@@ -522,6 +522,7 @@
 [data-night-mode] section.popper .popper__arrow {
     border-color: #505050 transparent transparent transparent!important
 }
-[data-night-mode] section.entry-content {
+[data-night-mode] section.entry-content,
+[data-night-mode] section.entry .edit-wrapper {
     font-family: "Helvetica"
 }
