@@ -106,7 +106,7 @@
 [data-night-mode] section.entry-voters ul li a.username>span {
     font-weight: normal
 }
-[data-night-mode] section.entry-voters ul li a.username span:not(:hover), 
+[data-night-mode] section.entry-voters ul li a.username span:not(:hover),
 [data-night-mode] section > article .info > span a.username spanspan:not(:hover) {
     color: #7b7b7b!important
 }
@@ -516,4 +516,16 @@
 }
 [data-night-mode] aside.hits-slider .swiper-container>button:hover {
     background-color: #1c1c1cc9
+}
+
+/* Tooltip on hover */
+[data-night-mode] section.popper,
+[data-night-mode] section.popper li:hover {
+    background: #505050 !important;
+}
+[data-night-mode] section.popper a:hover {
+    background: #1c1c1c !important;
+}
+[data-night-mode] section.popper[x-placement^="top"] .popper__arrow {
+    border-top-color: #505050 !important;
 }
