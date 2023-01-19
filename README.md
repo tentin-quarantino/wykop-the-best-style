@@ -1,6 +1,8 @@
 # Wykop the best style ✨
 Stylowanie, jakie pokochali użytkownicy.
 
+![alt screen](https://i.imgur.com/6CPnYnF.png)
+
 ## Jak włączyć ⚙️
 - sposób 1 (automatyczne aktualizacje)
   1. Pobieramy rozszerzenie [Stylus](https://github.com/openstyles/stylus/) dla [Chrome (Chromium)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/) / [Opera](https://addons.opera.com/extensions/details/stylus/)
@@ -13,5 +15,5 @@ Stylowanie, jakie pokochali użytkownicy.
   
 ## Zgłoszenia 📚
 Propozycje lub błędy proszę zgłaszać na jeden ze sposobów:
-- komentarz pod wpisem: https://wykop.pl/wpis/70068015/naprawilem-szate-graficzna-w-komentarzu-screen-z-g
 - wpis pod tagiem [#wykopthebeststyle](https://wykop.pl/tag/wykopthebeststyle)
+- issue na GitHub
