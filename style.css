@@ -630,6 +630,6 @@
 [data-night-mode] section.entries-sidebar section.entry>header>.right>div>span {
     color: #39a684
 }
-[data-night-mode] section.entries ul.dropdown:not(.clear-styles).icon>li span:before {
+[data-night-mode] section.entry section.actions ul.dropdown:not(.clear-styles).icon>li span:before {
     background: #767676
 }
