@@ -576,3 +576,9 @@
 [data-night-mode] .toast-container>div.toast-success {
     border-bottom-color: #4383af
 }
+[data-night-mode] section.voters section>.content>ul li>section>p {
+    color: var(--tuna)!important
+}
+[data-night-mode] section.voters section>.content>ul li>section time.date {
+    color: #767676
+}
