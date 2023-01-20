@@ -633,3 +633,7 @@
 [data-night-mode] section.entry section.actions ul.dropdown:not(.clear-styles).icon>li span:before {
     background: #767676
 }
+[data-night-mode] section.user-info>footer ul.icons li:not(:hover):before, 
+[data-night-mode] section.user-info>footer ul.icons li:after {
+    background: var(--steelBluish)!important
+}
