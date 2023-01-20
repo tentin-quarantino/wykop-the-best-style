@@ -11,7 +11,6 @@
     [data-night-mode] section.entry>article>header>div.right>div>span {
         line-height: 2
     }
-
 }
 @media (max-width: 720px) {
     [data-night-mode] section.entry>.comments>footer {
@@ -532,7 +531,7 @@
 [data-night-mode] section.entry-content,
 [data-night-mode] section.entry .edit-wrapper > .survey,
 [data-night-mode] section.entry section.editor textarea {
-    font-family: "Helvetica"
+    font-family: Arial
 }
 [data-night-mode] section.entry>.comments>footer {
     margin-top: -14px
