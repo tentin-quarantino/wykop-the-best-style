@@ -89,12 +89,15 @@
 [data-night-mode] li.home.active span {
     color: #3c3c3c!important
 }
-[data-night-mode] .switch label strong i:nth-child(2),
+[data-night-mode] .switch input:not(:checked)+label strong i:nth-child(2),
 [data-night-mode] header.header > .left > nav.main > ul li.active a,
 [data-night-mode] header.header > .right > nav > ul > li.dropdown > a:hover,
 [data-night-mode] section.entry-content .wrapper button,
 [data-night-mode] section.entry-content .wrapper button:hover {
     background: #505050!important
+}
+[data-night-mode] .switch input:checked+label strong i:nth-child(2) {
+    background: #7c7c7c!important
 }
 [data-night-mode] section.search-input form > label {
     background: #c4c8c9
@@ -363,6 +366,9 @@
 }
 [data-night-mode] .settings-page nav.new-pagination.number li.next>span, nav.new-pagination.number li.next a {
     border-left: 1px solid var(--iron)!important
+}
+[data-night-mode] .settings-page section.images figure.avatar {
+    background-color: #1c1c1c
 }
 nav.new-pagination.number li.prev>span {
     border-right: 1px solid var(--iron)!important
