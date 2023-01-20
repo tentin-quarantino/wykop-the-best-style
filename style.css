@@ -562,3 +562,8 @@
     -webkit-filter: drop-shadow(0 0 6px #1c1c1cc9);
     filter: drop-shadow(0 0 6px #1c1c1cc9)
 }
+[data-night-mode] aside.profile-top>section>header>ul li.report:before, 
+[data-night-mode] aside.profile-top>section>header>ul li.blacklist:before,
+[data-night-mode] aside.profile-top>section>header>ul li.blacklist:after {
+    background: var(--steelBluish)
+}
