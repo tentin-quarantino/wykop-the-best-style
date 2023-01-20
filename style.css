@@ -12,6 +12,11 @@
         line-height: 2
     }
 }
+@media (max-width: 720px) {
+    [data-night-mode] section.entry>.comments>footer {
+        margin-top: 8px!important
+    }
+}
 [data-night-mode],
 [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after,
 [data-night-mode] header.header > .right > nav > ul > li > a.new:after,
@@ -93,7 +98,7 @@
 [data-night-mode] li.reply::before {
     background: #767676!important
 }
-[data-night-mode] section.entry li.favourite path.border {
+[data-night-mode] section.entry li.favourite>button:not(.active) path.border {
     fill: #767676!important
 }
 [data-night-mode] header > .right path {
@@ -105,6 +110,9 @@
 }
 [data-night-mode] section.entry-voters ul li a.username>span {
     font-weight: normal
+}
+[data-night-mode] .entry-voters>ul>li.more {
+        font-weight: normal!important
 }
 [data-night-mode] section.entry-voters ul li a.username span:not(:hover), 
 [data-night-mode] section > article .info > span a.username spanspan:not(:hover) {
@@ -210,7 +218,10 @@
     height: auto
 }
 [data-night-mode] section.entry-voters ul {
-    padding: 0 0 0 60px
+    padding: 0 0 0 13px
+}
+[data-night-mode] section.entry-voters ul:before {
+    content: '+:'
 }
 [data-night-mode] button.toggle-to-favourite:not(.active) .svg-inline svg .body,
 [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
@@ -548,7 +559,8 @@
     color: #cad0d0
 }
 [data-night-mode] section.rating-box>ul li.plus,
-[data-night-mode] section.rating-box>ul li.minus {
+[data-night-mode] section.rating-box>ul li.minus,
+[data-night-mode] section.rating-box>ul li {
     min-width: max-content
 }
 [data-night-mode] .cool-lightbox {
@@ -589,7 +601,7 @@
 [data-night-mode] section.entry-content,
 [data-night-mode] section.entry .edit-wrapper > .survey,
 [data-night-mode] section.entry section.editor textarea {
-    font-family: "Helvetica"
+    font-family: Arial
 }
 [data-night-mode] section.entry>.comments>footer {
     margin-top: -14px
@@ -599,4 +611,38 @@
 }
 [data-night-mode] section.entry>.comments>footer>div>button.target {
     background: #3c3c3c
+}
+[data-night-mode] section.entry.reply {
+    width: 100%
+}
+[data-night-mode] section.embed-ghost figure:after {
+    background: #1c1c1cc9
+}
+[data-night-mode] section.embed-ghost {
+    border: none
+}
+[data-night-mode] section.embed-ghost figure .svg-inline svg {
+    fill: #cad0d0;
+    -webkit-filter: drop-shadow(0 0 6px #1c1c1cc9);
+    filter: drop-shadow(0 0 6px #1c1c1cc9)
+}
+[data-night-mode] aside.profile-top>section>header>ul li.report:before, 
+[data-night-mode] aside.profile-top>section>header>ul li.blacklist:before,
+[data-night-mode] aside.profile-top>section>header>ul li.blacklist:after {
+    background: var(--steelBluish)
+}
+[data-night-mode] .toast-container>div {
+    background: #2c2c2c
+}
+[data-night-mode] .toast-container>div.toast-success .toast-title {
+    color: var(--steelBluish)
+}
+[data-night-mode] .toast-container>div.toast-success {
+    border-bottom-color: #4383af
+}
+[data-night-mode] section.voters section>.content>ul li>section>p {
+    color: var(--tuna)!important
+}
+[data-night-mode] section.voters section>.content>ul li>section time.date {
+    color: #767676
 }
