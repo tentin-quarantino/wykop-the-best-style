@@ -659,14 +659,14 @@
     background: #3c3c3c;
     border: 2px solid #3c3c3c!important
 }
-[data-night-mode] section.link-block>section {
+[data-night-mode] section.link-block:not(.detailed)>section {
     min-height: 182px
 }
-[data-night-mode] section.link-block>section>article {
+[data-night-mode] section.link-block:not(.detailed)>section>article {
     width: calc(100% - 85px);
     padding: 20px 20px 20px 240px
 }
-[data-night-mode] section.link-block>section>article figure {
+[data-night-mode] section.link-block:not(.detailed)>section>article figure {
     top: 20px!important;
     left: 0
 }
