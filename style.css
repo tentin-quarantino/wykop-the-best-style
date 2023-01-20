@@ -642,11 +642,11 @@
 }
 [data-night-mode] section.entry:hover>article .edit-wrapper>footer section.actions ul li {
     opacity: 1;
-    transition: opacity .3s ease
+    transition: opacity .3s ease, color .2s ease
 }
 [data-night-mode] section.entry>article .edit-wrapper>footer section.actions ul li {
     opacity: 0;
-    transition: opacity .3s ease
+    transition: opacity .3s ease, color .2s ease
 }
 [data-night-mode] ul.dropdown:not(.clear-styles) ul.actions {
     -webkit-box-shadow: 0 0 32px -2px #1c1c1c;
