@@ -749,3 +749,12 @@ nav.new-pagination.number li.prev>span {
     -webkit-filter: drop-shadow(0 0 6px #1c1c1cc9);
     filter: drop-shadow(0 0 6px #1c1c1cc9)
 }
+[data-night-mode] section.modal .form-elements p:not(.popper).or span {
+    color: var(--abbey)
+}
+[data-night-mode] section.modal .form-elements p:not(.popper).or:before {
+    background: #505050!important
+}
+[data-night-mode] section.modal .form-elements input {
+    border: 1px solid #3c3c3c
+}
