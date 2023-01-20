@@ -123,7 +123,8 @@
 [data-night-mode] .entry footer section.actions li.comments:after {
     background: #767676
 }
-[data-night-mode] .entry footer section.actions li.comments>a.comment-counter {
+[data-night-mode] .entry footer section.actions li.comments>a.comment-counter,
+[data-night-mode] .entry footer section.actions li.comments>span.comment-counter {
     color: #767676
 }
 [data-night-mode] .entry footer section.actions li.comments>a.comment-counter:hover {
