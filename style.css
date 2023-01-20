@@ -111,6 +111,9 @@
 [data-night-mode] section.entry-voters ul li a.username>span {
     font-weight: normal
 }
+[data-night-mode] .entry-voters>ul>li.more {
+        font-weight: normal!important
+}
 [data-night-mode] section.entry-voters ul li a.username span:not(:hover), 
 [data-night-mode] section > article .info > span a.username spanspan:not(:hover) {
     color: #7b7b7b!important
@@ -215,7 +218,10 @@
     height: auto
 }
 [data-night-mode] section.entry-voters ul {
-    padding: 0 0 0 60px
+    padding: 0 0 0 13px
+}
+[data-night-mode] section.entry-voters ul:before {
+    content: '+:'
 }
 [data-night-mode] button.toggle-to-favourite:not(.active) .svg-inline svg .body,
 [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
