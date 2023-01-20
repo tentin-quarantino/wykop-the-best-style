@@ -88,18 +88,41 @@
 [data-night-mode] section.entry > article > header > div.right > div span time {
     color: #767676
 }
-[data-night-mode] li.reply {
-    color: #767676!important
+[data-night-mode] .entry footer section.actions li.reply {
+    color: #767676
 }
-[data-night-mode] li.reply:hover {
+[data-night-mode] .entry footer section.actions li.reply:hover {
     color: #cad0d0!important
 }
-[data-night-mode] li.reply::after,
-[data-night-mode] li.reply::before {
+[data-night-mode] .entry footer section.actions li.reply:after,
+[data-night-mode] .entry footer section.actions li.reply:before {
     background: #767676!important
 }
-[data-night-mode] section.entry li.favourite>button:not(.active) path.border {
-    fill: #767676!important
+[data-night-mode] .entry footer section.actions li.reply:hover:before {
+    background: #b7b7b7!important
+}
+[data-night-mode] .entry footer section.actions li.comments:after {
+    background: #767676
+}
+[data-night-mode] .entry footer section.actions li.comments>a.comment-counter {
+    color: #767676
+}
+[data-night-mode] .entry footer section.actions li.comments>a.comment-counter:hover {
+    color: #cad0d0
+}
+[data-night-mode] .entry footer section.actions li.comments>span.comment-counter:before,
+[data-night-mode] .entry footer section.actions li.comments>a.comment-counter:before {
+    background: #767676
+}
+[data-night-mode] .entry footer section.actions li.comments>span.comment-counter:hover:before,
+[data-night-mode] .entry footer section.actions li.comments>a.comment-counter:hover:before {
+    background: #cad0d0
+}
+[data-night-mode] .entry footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg path.border {
+    fill: #767676
+}
+[data-night-mode] .entry footer section.actions button.toggle-to-favourite:not(.active):hover .svg-inline svg path.border {
+    fill: #cad0d0
 }
 [data-night-mode] header > .right path {
     fill: #cad0d0
