@@ -30,6 +30,10 @@
     [data-night-mode] section.entry>article>header {
         max-height: none!important
     }
+    [data-night-mode] section.link-block:not(.detailed)>section>article {
+        width: 100%!important;
+        padding: 16px 8px 0 8px!important
+    }
 }
 @media (max-width: 720px) {
     [data-night-mode] section.entry>.comments>footer {
