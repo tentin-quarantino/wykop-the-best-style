@@ -5,11 +5,30 @@
     [data-night-mode] section.entry>article>header>div.right>div+div {
         position: initial
     }
+}
+@media (max-width: 640px) {
+    [data-night-mode] section.entry>article .edit-wrapper {
+        margin-left: 45px!important
+    }
     [data-night-mode] section.entry>article>header {
-        max-height: none!important
+        column-gap: 8px!important
+    }
+    [data-night-mode] section.entry > article > header > div.right > div > span {
+        display: block!important
+    }
+    [data-night-mode] section.entry > .comments {
+        margin: 16px 0 0 44px!important
+    }
+    [data-night-mode] section.entry > .comments + section.editor, 
+    [data-night-mode] section.entry > section.editor {
+        margin: 6px 0 0 44px!important;
+        width: calc(100% - 44px)!important
     }
     [data-night-mode] section.entry>article>header>div.right>div>span {
-        line-height: 2
+        line-height: 2!important
+    }
+    [data-night-mode] section.entry>article>header {
+        max-height: none!important
     }
 }
 @media (max-width: 720px) {
