@@ -548,3 +548,6 @@
 [data-night-mode] section.entry>.comments>footer>div>button.target {
     background: #3c3c3c
 }
+[data-night-mode] section.entry.reply {
+    width: 100%
+}
