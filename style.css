@@ -98,7 +98,7 @@
 [data-night-mode] li.reply::before {
     background: #767676!important
 }
-[data-night-mode] section.entry li.favourite path.border {
+[data-night-mode] section.entry li.favourite>button:not(.active) path.border {
     fill: #767676!important
 }
 [data-night-mode] header > .right path {
