@@ -652,3 +652,7 @@
     -webkit-box-shadow: 0 0 32px -2px #1c1c1c;
     box-shadow: 0 0 32px -2px #1c1c1c;
 }
+[data-night-mode] section.rating-box .buttons button.plus:not(.voted) {
+    background: #3c3c3c;
+    border: 2px solid #3c3c3c!important
+}
