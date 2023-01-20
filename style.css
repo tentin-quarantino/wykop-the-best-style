@@ -160,6 +160,9 @@
 [data-night-mode] section.entry-voters ul li a.username span {
     color: #7b7b7b
 }
+[data-night-mode] section.entry-voters ul li a.username {
+    text-decoration: none
+}
 [data-night-mode] li.account > ul > li:hover a,
 [data-night-mode] li > section section.notifications > .stream > .content > .notify:hover,
 [data-night-mode] li>section section.notifications>.stream>.content>.notify.read:hover,
