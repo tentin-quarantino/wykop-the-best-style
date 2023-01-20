@@ -241,10 +241,10 @@
     height: auto
 }
 [data-night-mode] section.entry-voters ul {
-    padding: 0 0 0 13px
+    padding: 0 0 0 10px
 }
 [data-night-mode] section.entry-voters ul:before {
-    content: '+:'
+    content: '+'
 }
 [data-night-mode] button.toggle-to-favourite:not(.active) .svg-inline svg .body,
 [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
