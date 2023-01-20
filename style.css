@@ -648,4 +648,7 @@
     opacity: 0;
     transition: opacity .2s ease
 }
-
+[data-night-mode] ul.dropdown:not(.clear-styles) ul.actions {
+    -webkit-box-shadow: 0 0 32px -2px #1c1c1c;
+    box-shadow: 0 0 32px -2px #1c1c1c;
+}
