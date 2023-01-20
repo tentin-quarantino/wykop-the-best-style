@@ -567,3 +567,12 @@
 [data-night-mode] aside.profile-top>section>header>ul li.blacklist:after {
     background: var(--steelBluish)
 }
+[data-night-mode] .toast-container>div {
+    background: #2c2c2c
+}
+[data-night-mode] .toast-container>div.toast-success .toast-title {
+    color: var(--steelBluish)
+}
+[data-night-mode] .toast-container>div.toast-success {
+    border-bottom-color: #4383af
+}
