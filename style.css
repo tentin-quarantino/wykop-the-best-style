@@ -340,8 +340,32 @@
     color: #cad0d0!important;
     background-color: #505050!important
 }
-[data-night-mode] .phone input::placeholder {
-    color: #515151!important
+[data-night-mode] .settings-page input::placeholder {
+    color: #666!important
+}
+[data-night-mode] .settings-page section.violations-block time.date {
+    color: var(--tuna)
+}
+[data-night-mode] .settings-page section.personal-data>section:not(.active)>header h3 a {
+    color: #767676
+}
+[data-night-mode] .settings-page section.access section.stream>.content>ul li+li,
+[data-night-mode] .settings-page section.access h3:after {
+    border-top: 1px solid #3c3c3c
+}
+[data-night-mode] .settings-page section.sex>div label .svg-inline {
+    border: 1px solid #3c3c3c;
+    background: #1c1c1c
+}
+[data-night-mode] .settings-page textarea,
+[data-night-mode] .settings-page input:not(.vti__input) {
+    border: 1px solid #3c3c3c
+}
+[data-night-mode] .settings-page nav.new-pagination.number li.next>span, nav.new-pagination.number li.next a {
+    border-left: 1px solid var(--iron)!important
+}
+nav.new-pagination.number li.prev>span {
+    border-right: 1px solid var(--iron)!important
 }
 [data-night-mode] section.violations-block + section:before {
     border-top: 1px dashed #515151
