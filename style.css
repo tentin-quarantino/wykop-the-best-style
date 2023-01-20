@@ -625,6 +625,9 @@
 [data-night-mode] section.voters section>.content>ul li>section time.date {
     color: #767676
 }
-[data-night-mode] section.sidebar section.entry>header {
+[data-night-mode] section.entries-sidebar section.entry>header {
     gap: 8px
+}
+[data-night-mode] section.entries-sidebar section.entry>header>.right>div>span {
+    color: #39a684
 }
