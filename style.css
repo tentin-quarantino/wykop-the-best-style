@@ -511,7 +511,10 @@
     margin: 0 0 0 8px
 }
 [data-night-mode] section.entry>article .edit-wrapper>* ~ * {
-    margin-top: 5px;
+    margin-top: 3px;
+}
+[data-night-mode] section.entry>article {
+    padding: 16px 16px 8px 16px
 }
 [data-night-mode] a.avatar figure.male:before {
     background: #4983ad
@@ -637,3 +640,12 @@
 [data-night-mode] section.user-info>footer ul.icons li:after {
     background: var(--steelBluish)!important
 }
+[data-night-mode] section.entry:hover>article .edit-wrapper>footer section.actions ul li {
+    opacity: 1;
+    transition: opacity .2s ease
+}
+[data-night-mode] section.entry>article .edit-wrapper>footer section.actions ul li {
+    opacity: 0;
+    transition: opacity .2s ease
+}
+
