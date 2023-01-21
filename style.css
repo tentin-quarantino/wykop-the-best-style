@@ -32,7 +32,7 @@
     }
     [data-night-mode] section.link-block:not(.detailed)>section>article {
         width: 100%!important;
-        padding: 16px 8px 0 8px!important
+        padding: 8px 8px 0 8px!important
     }
 }
 @media (max-width: 720px) {
@@ -549,9 +549,6 @@ nav.new-pagination.number li.prev>span {
 }
 [data-night-mode] section.entry>article .edit-wrapper>* ~ * {
     margin-top: 3px;
-}
-[data-night-mode] section.entry>article {
-    padding: 16px 16px 8px 16px
 }
 [data-night-mode] a.avatar figure.male:before {
     background: #4983ad
