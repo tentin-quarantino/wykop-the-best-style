@@ -5,11 +5,27 @@
     [data-night-mode] section.entry>article>header>div.right>div+div {
         position: initial
     }
+    [data-night-mode] section.entry>article>header>div.right>div:first-child {
+        display: flex!important;
+        flex-direction: column!important
+    }
+    [data-night-mode] section.entry>article>header>div.right>div>span>a+i {
+        display: block!important
+    }
+    [data-night-mode] section.entry>article .edit-wrapper {
+        margin-top: 0!important
+    }
+}
+@media (min-width: 534px) and (max-width: 640px) {
+    [data-night-mode] section.entry>article .edit-wrapper {
+        margin-top: 8px!important
+    }
 }
 @media (max-width: 640px) {
     [data-night-mode] section.entry>article .edit-wrapper {
-        margin-left: 45px!important
+        margin-left: 0!important
     }
+
     [data-night-mode] section.entry>article>header {
         column-gap: 8px!important
     }
@@ -25,7 +41,7 @@
         width: calc(100% - 44px)!important
     }
     [data-night-mode] section.entry>article>header>div.right>div>span {
-        line-height: 2!important
+        line-height: normal!important
     }
     [data-night-mode] section.entry>article>header {
         max-height: none!important
@@ -162,13 +178,14 @@
 }
 [data-night-mode] .right .username > span {
     font-weight: 700;
-    font-size: 14px
+    font-size: 14px;
+    line-height: normal
 }
 [data-night-mode] section.entry-voters ul li a.username>span {
     font-weight: normal
 }
 [data-night-mode] .entry-voters>ul>li.more {
-        font-weight: normal!important
+    font-weight: normal!important
 }
 [data-night-mode] section.entry-voters ul li a.username span {
     color: #7b7b7b
@@ -775,4 +792,7 @@ nav.new-pagination.number li.prev>span {
 }
 [data-night-mode] section>div>section.entry article {
     padding-bottom: 8px
+}
+[data-night-mode] section.entry>article>header>div.right>div:first-child {
+    transform: translateY(-4px)
 }
