@@ -758,3 +758,9 @@ nav.new-pagination.number li.prev>span {
 [data-night-mode] section.modal .form-elements input {
     border: 1px solid #3c3c3c
 }
+[data-night-mode] .cool-lightbox .cool-lightbox__slide .cool-lightbox__slide__img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%
+}
