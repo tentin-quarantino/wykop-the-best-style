@@ -1,7 +1,7 @@
 # Wykop the best style ✨
 Stylowanie, jakie pokochali użytkownicy.
 
-![alt screen](https://i.imgur.com/Enmmy0q.png)
+![alt screen](https://i.imgur.com/zIeocHR.png)
 
 ## Jak włączyć ⚙️
 - sposób 1 (automatyczne aktualizacje)
