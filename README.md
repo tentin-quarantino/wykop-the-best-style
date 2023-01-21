@@ -14,6 +14,10 @@ Stylowanie, jakie pokochali użytkownicy.
   3. Ustawiamy przy nim _Adresy URL w domenie_=_wykop.pl_
   
 Na smartfonach postępujemy tak samo, ale wymagana jest przeglądarka, która obsługuje rozszerzenia, np. [Kiwi](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=pl).
+
+## Jak zaktualizować 🆕
+![alt instrukcja aktualizacji](https://i.imgur.com/PM3rCPn.png)
+
 ## Zgłoszenia 📚
 Propozycje lub błędy proszę zgłaszać na jeden ze sposobów:
 - wpis pod tagiem [#wykopthebeststyle](https://wykop.pl/tag/wykopthebeststyle)
