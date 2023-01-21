@@ -17,7 +17,7 @@
         display: block!important
     }
     [data-night-mode] section.entry > .comments {
-        margin: 16px 0 0 44px!important
+        margin: 8px 0 0 44px!important
     }
     [data-night-mode] section.entry > .comments + section.editor, 
     [data-night-mode] section.entry > section.editor {
@@ -34,9 +34,11 @@
         width: 100%!important;
         padding: 8px 8px 0 8px!important
     }
-    [data-night-mode] section.microblog>div>section.entry>article,
-    [data-night-mode] section.link-comments>div>section.entry>article {
-        padding-bottom: 0!important
+    [data-night-mode] section>div>section.entry>article {
+        padding-bottom: 8px!important
+    }
+    [data-night-mode] section>div>section.entry.reply>article {
+        padding-bottom: 8px!important
     }
 }
 @media (max-width: 720px) {
@@ -765,6 +767,6 @@ nav.new-pagination.number li.prev>span {
     max-height: 100%;
     max-width: 100%
 }
-[data-night-mode] section.microblog>div>section.entry>article {
+[data-night-mode] section>div>section.entry article {
     padding-bottom: 8px
 }
