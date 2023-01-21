@@ -12,7 +12,7 @@
     [data-night-mode] section.entry>article>header>div.right>div>span>a+i {
         display: block!important
     }
-    [data-night-mode] section.entry>article .edit-wrapper {
+    [data-night-mode] section.entry:not(.reply)>article .edit-wrapper {
         margin-top: 8px!important
     }
     [data-night-mode] section.link-page section.entry>article .edit-wrapper {
