@@ -798,3 +798,64 @@ nav.new-pagination.number li.prev>span {
 [data-night-mode] section.entry>article>header>div.right>div:first-child {
     transform: translateY(-4px)
 }
+[data-night-mode] section.adding-page input {
+    background: #1c1c1c!important;
+    border: 1px solid #3c3c3c!important
+}
+[data-night-mode] section.adding-page input::placeholder {
+    color: #666
+}
+[data-night-mode] section.article-adding input::placeholder {
+    color: #666!important
+}
+[data-night-mode] section.article-editor .editor-wrapper,
+[data-night-mode] section.article-editor .codex-editor {
+    border: 1px solid #3c3c3c;
+    background: #1c1c1c!important
+}
+[data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbox.ce-toolbox--opened,
+[data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbox.ce-toolbox--opened>li:hover{
+    background-color: #1c1c1c!important
+}
+[data-night-mode] section.article-editor .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-paragraph:before {
+    color: #666
+}
+[data-night-mode] section.article-editor .codex-editor .ce-toolbox>li svg,
+[data-night-mode] section.article-editor .codex-editor svg {
+    fill: #666!important
+}
+[data-night-mode] section.article-editor .codex-editor .ce-toolbox>li:hover svg,
+[data-night-mode] section.article-editor .codex-editor svg:hover {
+    fill: var(--tuna)!important
+}
+[data-night-mode] ul.editor-lenny-faces li {
+    border-color: #2c2c2c;
+    color: var(--tuna)
+}
+[data-night-mode] ul.editor-lenny-faces li:hover {
+    background: #3c3c3c;
+    color: var(--tuna)
+}
+[data-night-mode] section.article-editor .codex-editor .cdx-quote,
+[data-night-mode] section.article-editor .codex-editor .ce-code {
+    background: #2c2c2c
+}
+[data-night-mode] section.article-editor .codex-editor .cdx-button {
+    color: var(--tuna);
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c
+}
+[data-night-mode] section.article-editor .codex-editor .cdx-button:hover {
+    border: 1px solid #505050;
+    background-color: #505050
+}
+[data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings
+{
+    background: #2c2c2c!important
+}
+[data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings .ce-settings__button {
+    background: #2c2c2c!important
+}
+[data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings .ce-settings__button:hover {
+    background: #3c3c3c!important
+}
