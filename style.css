@@ -862,3 +862,9 @@ nav.new-pagination.number li.prev>span {
 [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings .ce-settings__button:hover {
     background: #3c3c3c!important
 }
+[data-night-mode] header.static-top.article>div:after {
+    background: transparent;
+}
+[data-night-mode] header.static-top.article>div time {
+    color: var(--abbey);
+}
