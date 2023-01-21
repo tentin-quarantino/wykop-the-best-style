@@ -34,6 +34,9 @@
         width: 100%!important;
         padding: 8px 8px 0 8px!important
     }
+    [data-night-mode] section.microblog>div>section.entry>article {
+        padding-bottom: 0!important
+    }
 }
 @media (max-width: 720px) {
     [data-night-mode] section.entry>.comments>footer {
@@ -760,4 +763,7 @@ nav.new-pagination.number li.prev>span {
     width: auto;
     max-height: 100%;
     max-width: 100%
+}
+[data-night-mode] section.microblog>div>section.entry>article {
+    padding-bottom: 8px
 }
