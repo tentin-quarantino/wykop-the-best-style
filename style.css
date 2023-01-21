@@ -358,9 +358,12 @@
 [data-night-mode] .settings-page section.personal-data>section:not(.active)>header h3 a {
     color: #767676
 }
+[data-night-mode] .settings-page section.personal-data>section {
+    border-bottom: 1px solid #515151
+}
 [data-night-mode] .settings-page section.access section.stream>.content>ul li+li,
 [data-night-mode] .settings-page section.access h3:after {
-    border-top: 1px solid #3c3c3c
+    border-top: 1px solid #515151
 }
 [data-night-mode] .settings-page section.sex>div label .svg-inline {
     border: 1px solid #3c3c3c;
@@ -376,6 +379,10 @@
 [data-night-mode] .settings-page section.images figure.avatar {
     background-color: #1c1c1c
 }
+[data-night-mode] .settings-page h3:after {
+    background: #515151
+}
+
 nav.new-pagination.number li.prev>span {
     border-right: 1px solid var(--iron)!important
 }
