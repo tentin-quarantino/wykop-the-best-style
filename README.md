@@ -13,6 +13,7 @@ Stylowanie, jakie pokochali użytkownicy.
   2. Dodajemy kod z pliku [style.css](style.css) jako nowy styl
   3. Ustawiamy przy nim _Adresy URL w domenie_=_wykop.pl_
   
+Na smartfonach postępujemy tak samo, ale wymagana jest przeglądarka, która obsługuje rozszerzenia, np. [Kiwi](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=pl).
 ## Zgłoszenia 📚
 Propozycje lub błędy proszę zgłaszać na jeden ze sposobów:
 - wpis pod tagiem [#wykopthebeststyle](https://wykop.pl/tag/wykopthebeststyle)
