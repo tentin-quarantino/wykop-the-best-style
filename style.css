@@ -290,9 +290,14 @@
 }
 [data-night-mode] section.entry > .comments + section.editor,
 [data-night-mode] section.entry > section.editor {
-    margin: 6px 0 9px 52px;
     width: calc(100% - 52px);
     background: #1c1c1c
+}
+[data-night-mode] section.entry > .comments + section.editor {
+    margin: 6px 0 9px 52px;
+}
+[data-night-mode] section.entry > section.editor {
+    margin: 14px 0 9px 52px;
 }
 [data-night-mode] .messages-page section.entry-content .wrapper blockquote,
 [data-night-mode] section.entry-content .wrapper code,
