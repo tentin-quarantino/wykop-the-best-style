@@ -40,8 +40,8 @@
     }
     [data-night-mode] section.entry > .comments + section.editor, 
     [data-night-mode] section.entry > section.editor {
-        margin: 6px 0 0 44px!important;
-        width: calc(100% - 44px)!important
+        margin: 6px 0 0 0px!important;
+        width: 100%!important
     }
     [data-night-mode] section.entry>article>header>div.right>div>span {
         line-height: normal!important
@@ -867,4 +867,7 @@ nav.new-pagination.number li.prev>span {
 }
 [data-night-mode] header.static-top.article>div time {
     color: var(--abbey);
+}
+[data-night-mode] section.editor.expand .switch label span {
+    white-space: nowrap
 }
