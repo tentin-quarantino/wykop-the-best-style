@@ -804,10 +804,12 @@
         margin-top: -14px;
         z-index: 1;
     }
-    [data-night-mode] section.entry > .comments > footer > div > button.target:hover {
+    [data-night-mode] section.entry > .comments > footer > div > button.target:hover,
+    [data-night-mode] section.entry > .comments > footer > div.button.outline .target:hover {
         background: #2c2c2c;
     }
-    [data-night-mode] section.entry > .comments > footer > div > button.target {
+    [data-night-mode] section.entry > .comments > footer > div > button.target,
+    [data-night-mode] section.entry > .comments > footer > div.button.outline .target {
         background: #3c3c3c;
     }
     [data-night-mode] section.entry.reply {
