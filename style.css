@@ -321,9 +321,11 @@
 }
 [data-night-mode] .messages-page section.entry-content .wrapper blockquote,
 [data-night-mode] section.entry-content .wrapper code,
-[data-night-mode] .phone .vue-tel-input,
 [data-night-mode] section.entry > section.editor textarea,
 [data-night-mode] section.violations-block > section {
+    background: #1c1c1c
+}
+[data-night-mode] .phone.vue-tel-input {
     background: #1c1c1c
 }
 [data-night-mode] section.entry-content .wrapper code {
@@ -792,7 +794,7 @@ nav.new-pagination.number li.prev>span {
 [data-night-mode] section.modal .form-elements p:not(.popper).or:before {
     background: #505050!important
 }
-[data-night-mode] section.modal .form-elements input {
+[data-night-mode] section.modal:not(.registration):not(.login) .form-elements input {
     border: 1px solid #3c3c3c
 }
 [data-night-mode] section>div>section.entry article {
@@ -873,4 +875,25 @@ nav.new-pagination.number li.prev>span {
 }
 [data-night-mode] nav.mobile-navbar {
     background: linear-gradient(to bottom, #1c1c1c99 6px, #1c1c1c 6px)
+}
+[data-night-mode] div.button.facebook-btn .target {
+    color: #f8fafc
+}
+[data-night-mode] .form-elements p:not(.popper).info-rules {
+    color: #7b7b7b
+}
+[data-night-mode] .form-elements p:not(.popper).info-rules>a {
+        color: #7b7b7b!important
+}
+[data-night-mode] section.login.modal p.register,
+[data-night-mode] section.registration.modal p.login {
+    background: #262626;
+    color: var(--abbey)
+}
+[data-night-mode] section.login.modal input::placeholder,
+[data-night-mode] section.registration input::placeholder {
+    color: #666!important
+}
+[data-night-mode] form.registration div.checkbox input:not(:checked)+label:before {
+    border: 2px solid #3c3c3c 
 }
