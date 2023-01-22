@@ -54,10 +54,10 @@
         padding: 8px 8px 0 8px!important
     }
     [data-night-mode] section>div>section.entry>article {
-        padding-bottom: 8px!important
+        padding-bottom: 4px!important
     }
     [data-night-mode] section>div>section.entry.reply>article {
-        padding-bottom: 8px!important
+        padding-bottom: 4px!important
     }
 }
 @media (max-width: 720px) {
@@ -796,7 +796,7 @@ nav.new-pagination.number li.prev>span {
     border: 1px solid #3c3c3c
 }
 [data-night-mode] section>div>section.entry article {
-    padding-bottom: 8px
+    padding-bottom: 4px
 }
 [data-night-mode] section.entry>article>header>div.right>div:first-child {
     transform: translateY(-4px)
