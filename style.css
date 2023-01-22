@@ -953,4 +953,7 @@
         color: #1c1c1c;
         font-weight: 600;
     }
+    [data-night-mode] section.rating-box > ul li.separated.zero {
+        color: #39a684;
+    }
 }
