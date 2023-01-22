@@ -14,6 +14,7 @@
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."   1
 @var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"     1
 @var checkbox showUpvotingUsers         "Lista plusujących"            1
+@var range    microblogEntryMargin      "Odstępy między wpisami na mirko" [16, 1, 64, 1, 'px']
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -114,6 +115,9 @@
         [data-night-mode] section.entry .entry-voters {
             display: none !important;
         }
+    }
+    [data-night-mode] .entry:not(.reply) {
+        margin-top: microblogEntryMargin !important;
     }
 
     [data-night-mode],
