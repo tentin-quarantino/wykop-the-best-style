@@ -8,14 +8,15 @@
 @supportURL   https://github.com/tentin-quarantino/wykop-the-best-style/issues
 @license      CC BY 4.0
 @preprocessor stylus
-@var checkbox showDefaultCategories     "Domyślne kategorie"           1
-@var checkbox showLinksSlider           "Panel hitów na głównej"       1
-@var checkbox showDoodle                "Obrazki w nagłówku"           1
-@var checkbox showSourceDevice          "via Wykop, via Mobile etc."   1
-@var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"     1
-@var checkbox showUpvotingUsers         "Lista plusujących"            1
-@var range    desktopEntriesMargin      "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
-@var range    mobileEntriesMargin       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
+@var checkbox showDefaultCategories     "Domyślne kategorie"                1
+@var checkbox showLinksSlider           "Panel hitów na głównej"            1
+@var checkbox showDoodle                "Obrazki w nagłówku"                1
+@var checkbox showSourceDevice          "via Wykop, via Mobile etc."        1
+@var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"          1
+@var checkbox showUpvotingUsers         "Lista plusujących"                 1
+@var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka\n(Mobilne)"   0
+@var range    entriesMarginPC           "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
+@var range    entriesMarginMobile       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -39,7 +40,12 @@
             margin-top: 0 !important;
         }
         [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
-            margin-top: mobileEntriesMargin !important;
+            margin-top: entriesMarginMobile !important;
+        }
+         if (nonStickyHeaderBarMobile) {
+            [data-night-mode] header.header {
+                position: relative !important;
+            }
         }
     }
     @media (min-width: 534px) and (max-width: 640px) {
@@ -49,7 +55,7 @@
     }
     @media (min-width: 534px) {
         [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
-            margin-top: desktopEntriesMargin !important;
+            margin-top: entriesMarginPC !important;
         }
     }
     @media (max-width: 640px) {
