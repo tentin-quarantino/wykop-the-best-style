@@ -13,6 +13,7 @@
 @var checkbox showDoodle                "Obrazki w nagłówku"           1
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."   1
 @var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"     1
+@var checkbox showUpvotingUsers         "Lista plusujących"            1
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -106,6 +107,11 @@
     }
     if (!showEntryOnHomepage) {
         [data-night-mode] section.home-page > section.home .entry {
+            display: none !important;
+        }
+    }
+    if (!showUpvotingUsers) {
+        [data-night-mode] section.entry .entry-voters {
             display: none !important;
         }
     }
