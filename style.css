@@ -15,6 +15,7 @@
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."        1
 @var checkbox showUpvotingUsers         "Lista plusujących"                 1
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"             0
+@var checkbox angularVikop              "Kanciasty Wykop"                   0
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka\n(Mobilne)"   0
 @var range    entriesMarginPC           "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
@@ -197,6 +198,13 @@
             margin-top: 3px !important;
         }
     }
+    if (angularVikop) {
+        [data-night-mode] *,
+        [data-night-mode] *::before,
+        [data-night-mode] *::after  {
+            border-radius: 0 !important;
+        }
+    }
 
     [data-night-mode],
     [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after,
@@ -254,6 +262,12 @@
     }
     [data-night-mode] .switch input:checked + label strong i:nth-child(2) {
         background: #7c7c7c !important;
+    }
+    [data-night-mode] .switch input + label strong i:nth-child(1) {
+        border-radius: 7px !important;
+    }
+    [data-night-mode] .switch input + label strong i:nth-child(2) {
+        border-radius: 50% !important;
     }
     [data-night-mode] section.search-input form > label {
         background: #c4c8c9;
@@ -481,6 +495,10 @@
     [data-night-mode] .pm.dropdown > a:after {
         border: none !important;
     }
+    [data-night-mode] .notifications.dropdown > a:after,
+    [data-night-mode] .links > .content .buckets > .bucket:after {
+        border-radius: 50% !important;
+    }
     [data-night-mode] .messages-page section.message > article.me > div.content {
         background: #1c1c1c;
     }
@@ -668,8 +686,17 @@
     [data-night-mode] section.vote-box.voted .dig p {
         background: #505050;
     }
+    [data-night-mode] section.vote-box .dig p span {
+        border-radius: 9px !important;
+    }
     [data-night-mode] section.vote-box .dig button {
         color: #cad0d0;
+    }
+    [data-night-mode] section.vote-box .dig p {
+        border-radius: 14px !important;
+    }
+    [data-night-mode] section.vote-box.hot .dig p:before {
+        border-radius: 50% !important;
     }
     [data-night-mode] section.vote-box:not(.voted) .dig button {
         color: var(--whitish) !important;
@@ -1021,6 +1048,9 @@
     }
     [data-night-mode] form.registration div.checkbox input:not(:checked) + label:before {
         border: 2px solid #3c3c3c;
+    }
+    [data-night-mode] header.header strong.upcoming-count {
+        border-radius: 6px !important;
     }
     [data-night-mode] header.header strong.upcoming-count:after {
         color: #1c1c1c;
