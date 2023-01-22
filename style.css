@@ -8,12 +8,13 @@
 @supportURL   https://github.com/tentin-quarantino/wykop-the-best-style/issues
 @license      CC BY 4.0
 @preprocessor stylus
-@var checkbox showDefaultCategories     "Domyślne kategorie"                1
 @var checkbox showLinksSlider           "Panel hitów na głównej"            1
+@var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"          1
+@var checkbox showDefaultCategories     "Domyślne kategorie"                1
 @var checkbox showDoodle                "Obrazki w nagłówku"                1
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."        1
 @var checkbox showUpvotingUsers         "Lista plusujących"                 1
-@var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"          1
+@var checkbox commentsCompactMode       "Kompaktowe komentarze"             0
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka\n(Mobilne)"   0
 @var range    entriesMarginPC           "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
@@ -43,7 +44,7 @@
         [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
             margin-top: entriesMarginMobile !important;
         }
-         if (nonStickyHeaderBarMobile) {
+        if (nonStickyHeaderBarMobile) {
             [data-night-mode] header.header {
                 position: relative !important;
             }
@@ -57,6 +58,17 @@
     @media (min-width: 534px) {
         [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
             margin-top: entriesMarginPC !important;
+        }
+        if (commentsCompactMode) {
+            [data-night-mode] section.entry.reply {
+                padding: 15px 0 15px 15px !important;
+            }
+            [data-night-mode] section.content section.entry:not(.reply) {
+                padding: 12px !important;
+            }
+            [data-night-mode] section.entry.reply > article {
+                padding-right: 8px !important;
+            }
         }
     }
     @media (max-width: 640px) {
@@ -93,6 +105,15 @@
         }
         [data-night-mode] section > div > section.entry.reply > article {
             padding-bottom: 4px !important;
+            width: calc(100% + 8px) !important;
+        }
+        if (commentsCompactMode) {
+            [data-night-mode] section.entry.reply {
+                padding: 12px 0 0 12px !important;
+            }
+            [data-night-mode] section.entry.reply > article {
+                padding-right: 0 !important;
+            }
         }
     }
     @media (max-width: 720px) {
@@ -130,6 +151,50 @@
     if (!showUpvotingUsers) {
         [data-night-mode] section.entry .entry-voters {
             display: none !important;
+        }
+    }
+    if (commentsCompactMode) {
+        [data-night-mode] .entry.reply section.entry-photo figure,
+        [data-night-mode] .entry.reply section.entry-photo figure figcaption {
+            background: #2c2c2c !important;
+            border: none !important;
+        }
+        [data-night-mode] section.entry.reply > article {
+            padding-top: 0 !important;
+            background: none !important;
+        }
+        [data-night-mode] section.entry.reply {
+            margin-top: 3px !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+        [data-night-mode] section.entry:not(.reply) > .comments {
+            margin-left: 40px !important;
+        }
+        [data-night-mode] .entry .wrapper > blockquote + br {
+            display: none !important;
+        }
+        [data-night-mode] .entry .wrapper > blockquote {
+            margin-bottom: 4px !important;
+        }
+        [data-night-mode] section.entry > article .edit-wrapper > * ~ * {
+            margin-top: 0 !important;
+        }
+    } else {
+        [data-night-mode] .entry.reply section.entry-photo figure,
+        [data-night-mode] .entry.reply section.entry-photo figure figcaption {
+            background: #313131 !important;
+            border: none !important;
+        }
+        [data-night-mode] section.entry.reply > article {
+            background: rgba(#f8fafc, .025) !important;
+        }
+        [data-night-mode] section.entry.reply {
+            -webkit-box-shadow: 0px 3px 5px 0 #1c1c1c91 !important;
+            box-shadow: 0px 3px 5px 0 #1c1c1c91 !important;
+        }
+        [data-night-mode] section.entry > article .edit-wrapper > * ~ * {
+            margin-top: 3px !important;
         }
     }
 
@@ -265,7 +330,6 @@
     [data-night-mode] li.account > ul > li:hover a,
     [data-night-mode] li > section section.notifications > .stream > .content > .notify:hover,
     [data-night-mode] li > section section.notifications > .stream > .content > .notify.read:hover,
-    [data-night-mode] section.entry.reply > article,
     [data-night-mode] section.notifications section.stream > .content > section.notify:hover:before,
     [data-night-mode] ul.dropdown:not(.clear-styles) ul.actions li:hover {
         background: rgba(#f8fafc, .025) !important;
@@ -291,8 +355,7 @@
     [data-night-mode]::-webkit-scrollbar {
         width: auto
     }
-    [data-night-mode] section.entry,
-    [data-night-mode] section.entry:hover {
+    [data-night-mode] section.entry {
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
     }
@@ -402,11 +465,6 @@
     }
     [data-night-mode] .vue-simple-spinner {
         border-color: #cad0d0 #2c2c2c #2c2c2c !important
-    }
-    [data-night-mode] .entry.reply section.entry-photo figure,
-    [data-night-mode] .entry.reply section.entry-photo figure figcaption {
-        background: #313131 !important;
-        border: none !important;
     }
     [data-night-mode] .entry section.entry-photo figure,
     [data-night-mode] .entry section.entry-photo figure figcaption {
@@ -649,16 +707,11 @@
     [data-night-mode] section.entry > article > header > div.right > div + div {
         margin: 0 0 0 8px;
     }
-    [data-night-mode] section.entry > article .edit-wrapper > * ~ * {
-        margin-top: 3px;
-    }
     [data-night-mode] a.avatar figure.male:before {
         background: #4983ad;
     }
     [data-night-mode] section.stream > .content > section.entry.reply {
         margin-top: 8px;
-        -webkit-box-shadow: 0px 3px 5px 0 #1c1c1c91 !important;
-        box-shadow: 0px 3px 5px 0 #1c1c1c91 !important;
     }
     [data-night-mode] .open-left-panel .left-panel + div {
         background: #1c1c1cc9;
@@ -722,6 +775,7 @@
     }
     [data-night-mode] section.entry > .comments > footer {
         margin-top: -14px;
+        z-index: 1;
     }
     [data-night-mode] section.entry > .comments > footer > div > button.target:hover {
         background: #2c2c2c;
@@ -873,7 +927,7 @@
         padding-bottom: 4px;
     }
     [data-night-mode] section.entry > article > header > div.right > div:first-child {
-        transform: translateY(-4px);
+        transform: translateY(-3px);
     }
     [data-night-mode] section.adding-page input {
         background: #1c1c1c !important;
