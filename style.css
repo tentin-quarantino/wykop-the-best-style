@@ -8,9 +8,10 @@
 @supportURL   https://github.com/tentin-quarantino/wykop-the-best-style/issues
 @license      CC BY 4.0
 @preprocessor stylus
-@var checkbox showDefaultCategories     "Domyślne kategorie"        1
-@var checkbox showLinksSlider           "Panel hitów na głównej"    1
-@var checkbox showDoodle                "Obrazki w nagłówku"        1
+@var checkbox showDefaultCategories     "Domyślne kategorie"           1
+@var checkbox showLinksSlider           "Panel hitów na głównej"       1
+@var checkbox showDoodle                "Obrazki w nagłówku"           1
+@var checkbox showSourceDevice          "via Wykop, via Mobile etc."   1
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -80,6 +81,7 @@
             margin-top: 8px !important;
         }
     }
+
     if (!showDefaultCategories) {
         [data-night-mode] aside.left-panel > section.links > .content ul.categories {
             display: none !important;
@@ -93,6 +95,11 @@
     if (!showDoodle) {
 
         [data-night-mode] .header aside.doodle {
+            display: none !important;
+        }
+    }
+    if (!showSourceDevice) {
+        [data-night-mode] .entry .right > div > span > i {
             display: none !important;
         }
     }
