@@ -13,7 +13,6 @@
 @var checkbox showDoodle                "Obrazki w nagłówku"           1
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."   1
 @var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"     1
-
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -153,9 +152,7 @@
         color: #0000 !important;
     }
     [data-night-mode] header.header > .left > nav.main > ul li a + strong {
-        background: #f75e2c;
-        -webkit-box-shadow: none;
-        box-shadow: none;
+        background: var(--steelBluish);
     }
     [data-night-mode] li.home.active span {
         color: #3c3c3c !important;
@@ -951,5 +948,9 @@
     }
     [data-night-mode] form.registration div.checkbox input:not(:checked) + label:before {
         border: 2px solid #3c3c3c;
+    }
+    [data-night-mode] header.header strong.upcoming-count:after {
+        color: #1c1c1c;
+        font-weight: 600;
     }
 }
