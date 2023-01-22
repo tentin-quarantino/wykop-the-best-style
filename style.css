@@ -737,12 +737,21 @@ nav.new-pagination.number li.prev>span {
     min-height: 182px
 }
 [data-night-mode] section.link-block:not(.detailed)>section>article {
-    width: calc(100% - 85px);
-    padding: 20px 20px 20px 240px
+    width: calc(100% - 73px);
+    padding: 12px 12px 12px 232px;
 }
 [data-night-mode] section.link-block:not(.detailed)>section>article figure {
-    top: 20px!important;
+    top: 12px!important;
     left: 0
+}
+[data-night-mode] section.link-block>section>aside {
+    width: 73px
+}
+[data-night-mode] section.link-block section.vote-box {
+    margin: 12px 0
+}
+[data-night-mode] section.link-block>section>article figure {
+    height: 158px
 }
 [data-night-mode] section.link-block>section>article * {
     transition: color .2s ease, background .2s ease!important
