@@ -871,3 +871,6 @@ nav.new-pagination.number li.prev>span {
 [data-night-mode] section.editor.expand .switch label span {
     white-space: nowrap
 }
+[data-night-mode] nav.mobile-navbar {
+    background: linear-gradient(to bottom, #1c1c1c99 6px, #1c1c1c 6px)
+}
