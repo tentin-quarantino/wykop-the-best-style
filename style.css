@@ -12,40 +12,39 @@
 @var checkbox showLinksSlider           "Panel hitów na głównej"    1
 @var checkbox showDoodle                "Obrazki w nagłówku"        1
 ==/UserStyle== */
-
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
-        [data-night-mode] section.entry>article>header {
+        [data-night-mode] section.entry > article > header {
             margin-top: 0;
         }
-        [data-night-mode] section.entry>article>header>div.right>div+div {
+        [data-night-mode] section.entry > article > header > div.right > div + div {
             position: initial;
         }
-        [data-night-mode] section.entry>article>header>div.right>div:first-child {
+        [data-night-mode] section.entry > article > header > div.right > div:first-child {
             display: flex !important;
             flex-direction: column !important;
         }
-        [data-night-mode] section.entry>article>header>div.right>div>span>a+i {
+        [data-night-mode] section.entry > article > header > div.right > div > span > a + i {
             display: block !important;
         }
-        [data-night-mode] section.entry:not(.reply)>article .edit-wrapper {
+        [data-night-mode] section.entry:not(.reply) > article .edit-wrapper {
             margin-top: 8px !important;
         }
-        [data-night-mode] section.link-page section.entry>article .edit-wrapper {
+        [data-night-mode] section.link-page section.entry > article .edit-wrapper {
             margin-top: 0 !important;
         }
     }
     @media (min-width: 534px) and (max-width: 640px) {
-        [data-night-mode] section.entry>article .edit-wrapper {
+        [data-night-mode] section.entry > article .edit-wrapper {
             margin-top: 8px !important;
         }
     }
     @media (max-width: 640px) {
-        [data-night-mode] section.entry>article .edit-wrapper {
+        [data-night-mode] section.entry > article .edit-wrapper {
             margin-left: 0 !important;
         }
 
-        [data-night-mode] section.entry>article>header {
+        [data-night-mode] section.entry > article > header {
             column-gap: 8px !important;
         }
         [data-night-mode] section.entry > article > header > div.right > div > span {
@@ -54,30 +53,30 @@
         [data-night-mode] section.entry > .comments {
             margin: 8px 0 0 44px !important;
         }
-        [data-night-mode] section.entry > .comments + section.editor, 
+        [data-night-mode] section.entry > .comments + section.editor,
         [data-night-mode] section.entry > section.editor {
             margin: 6px 0 0 0px !important;
             width: 100% !important;
         }
-        [data-night-mode] section.entry>article>header>div.right>div>span {
+        [data-night-mode] section.entry > article > header > div.right > div > span {
             line-height: normal !important;
         }
-        [data-night-mode] section.entry>article>header {
+        [data-night-mode] section.entry > article > header {
             max-height: none !important;
         }
-        [data-night-mode] section.link-block:not(.detailed)>section>article {
+        [data-night-mode] section.link-block:not(.detailed) > section > article {
             width: 100% !important;
             padding: 8px 8px 0 8px !important;
         }
-        [data-night-mode] section>div>section.entry>article {
+        [data-night-mode] section > div > section.entry > article {
             padding-bottom: 4px !important;
         }
-        [data-night-mode] section>div>section.entry.reply>article {
+        [data-night-mode] section > div > section.entry.reply > article {
             padding-bottom: 4px !important;
         }
     }
     @media (max-width: 720px) {
-        [data-night-mode] section.entry>.comments>footer {
+        [data-night-mode] section.entry > .comments > footer {
             margin-top: 8px !important;
         }
     }
@@ -87,17 +86,17 @@
         }
     }
     if (!showLinksSlider) {
-        [data-night-mode] .main-content .hits-slider>.hits-slider-stream>div {
+        [data-night-mode] .main-content .hits-slider > .hits-slider-stream > div {
             display: none !important;
         }
     }
     if (!showDoodle) {
-    
+
         [data-night-mode] .header aside.doodle {
             display: none !important;
         }
     }
-    
+
     [data-night-mode],
     [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after,
     [data-night-mode] header.header > .right > nav > ul > li > a.new:after,
@@ -147,14 +146,14 @@
     [data-night-mode] li.home.active span {
         color: #3c3c3c !important;
     }
-    [data-night-mode] .switch input:not(:checked)+label strong i:nth-child(2),
+    [data-night-mode] .switch input:not(:checked) + label strong i:nth-child(2),
     [data-night-mode] header.header > .left > nav.main > ul li.active a,
     [data-night-mode] header.header > .right > nav > ul > li.dropdown > a:hover,
     [data-night-mode] section.entry-content .wrapper button,
     [data-night-mode] section.entry-content .wrapper button:hover {
         background: #505050 !important;
     }
-    [data-night-mode] .switch input:checked+label strong i:nth-child(2) {
+    [data-night-mode] .switch input:checked + label strong i:nth-child(2) {
         background: #7c7c7c !important;
     }
     [data-night-mode] section.search-input form > label {
@@ -188,19 +187,19 @@
     [data-night-mode] .entry footer section.actions li.comments:after {
         background: #767676;
     }
-    [data-night-mode] .entry footer section.actions li.comments>a.comment-counter,
-    [data-night-mode] .entry footer section.actions li.comments>span.comment-counter {
+    [data-night-mode] .entry footer section.actions li.comments > a.comment-counter,
+    [data-night-mode] .entry footer section.actions li.comments > span.comment-counter {
         color: #767676;
     }
-    [data-night-mode] .entry footer section.actions li.comments>a.comment-counter:hover {
+    [data-night-mode] .entry footer section.actions li.comments > a.comment-counter:hover {
         color: #cad0d0;
     }
-    [data-night-mode] .entry footer section.actions li.comments>span.comment-counter:before,
-    [data-night-mode] .entry footer section.actions li.comments>a.comment-counter:before {
+    [data-night-mode] .entry footer section.actions li.comments > span.comment-counter:before,
+    [data-night-mode] .entry footer section.actions li.comments > a.comment-counter:before {
         background: #767676;
     }
-    [data-night-mode] .entry footer section.actions li.comments>span.comment-counter:hover:before,
-    [data-night-mode] .entry footer section.actions li.comments>a.comment-counter:hover:before {
+    [data-night-mode] .entry footer section.actions li.comments > span.comment-counter:hover:before,
+    [data-night-mode] .entry footer section.actions li.comments > a.comment-counter:hover:before {
         background: #cad0d0;
     }
     [data-night-mode] .entry footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg path.border {
@@ -217,10 +216,10 @@
         font-size: 14px;
         line-height: normal;
     }
-    [data-night-mode] section.entry-voters ul li a.username>span {
+    [data-night-mode] section.entry-voters ul li a.username > span {
         font-weight: normal;
     }
-    [data-night-mode] .entry-voters>ul>li.more {
+    [data-night-mode] .entry-voters > ul > li.more {
         font-weight: normal !important;
     }
     [data-night-mode] section.entry-voters ul li a.username span {
@@ -231,7 +230,7 @@
     }
     [data-night-mode] li.account > ul > li:hover a,
     [data-night-mode] li > section section.notifications > .stream > .content > .notify:hover,
-    [data-night-mode] li>section section.notifications>.stream>.content>.notify.read:hover,
+    [data-night-mode] li > section section.notifications > .stream > .content > .notify.read:hover,
     [data-night-mode] section.entry.reply > article,
     [data-night-mode] section.notifications section.stream > .content > section.notify:hover:before,
     [data-night-mode] ul.dropdown:not(.clear-styles) ul.actions li:hover {
@@ -415,17 +414,17 @@
     [data-night-mode] .settings-page section.violations-block time.date {
         color: var(--tuna);
     }
-    [data-night-mode] .settings-page section.personal-data>section:not(.active)>header h3 a {
+    [data-night-mode] .settings-page section.personal-data > section:not(.active) > header h3 a {
         color: #767676;
     }
-    [data-night-mode] .settings-page section.personal-data>section {
+    [data-night-mode] .settings-page section.personal-data > section {
         border-bottom: 1px solid #515151;
     }
-    [data-night-mode] .settings-page section.access section.stream>.content>ul li+li,
+    [data-night-mode] .settings-page section.access section.stream > .content > ul li + li,
     [data-night-mode] .settings-page section.access h3:after {
         border-top: 1px solid #515151;
     }
-    [data-night-mode] .settings-page section.sex>div label .svg-inline {
+    [data-night-mode] .settings-page section.sex > div label .svg-inline {
         border: 1px solid #3c3c3c;
         background: #1c1c1c;
     }
@@ -433,7 +432,8 @@
     [data-night-mode] .settings-page input:not(.vti__input) {
         border: 1px solid #3c3c3c;
     }
-    [data-night-mode] .settings-page nav.new-pagination.number li.next>span, nav.new-pagination.number li.next a {
+    [data-night-mode] .settings-page nav.new-pagination.number li.next > span,
+    nav.new-pagination.number li.next a {
         border-left: 1px solid var(--iron) !important;
     }
     [data-night-mode] .settings-page section.images figure.avatar {
@@ -442,7 +442,7 @@
     [data-night-mode] .settings-page h3:after {
         background: #515151;
     }
-    nav.new-pagination.number li.prev>span {
+    nav.new-pagination.number li.prev > span {
         border-right: 1px solid var(--iron) !important;
     }
     [data-night-mode] section.violations-block + section:before {
@@ -460,14 +460,14 @@
     [data-night-mode] section.file .upload span {
         color: #cad0d0;
     }
-    [data-night-mode] section.notifications section.stream>.content>section.notify,
-    [data-night-mode] section.notifications section.stream>.content>section.notify.read {
+    [data-night-mode] section.notifications section.stream > .content > section.notify,
+    [data-night-mode] section.notifications section.stream > .content > section.notify.read {
         background: #1c1c1c !important;
     }
-    [data-night-mode] li>section section.stream>.content>section.item.unread:before {
+    [data-night-mode] li > section section.stream > .content > section.item.unread:before {
         background: #3c3c3c !important;
     }
-    [data-night-mode] section.notifications section.stream>.content {
+    [data-night-mode] section.notifications section.stream > .content {
         background: #1c1c1c;
     }
     [data-night-mode] section.search-results-dropdown {
@@ -475,19 +475,19 @@
         -webkit-box-shadow: 0 5px 26px 5px #1c1c1c !important;
         background: #2c2c2c !important;
     }
-    [data-night-mode] section.search-results-dropdown section.stream>.content>section article header {
+    [data-night-mode] section.search-results-dropdown section.stream > .content > section article header {
         background-color: #3c3c3c !important;
     }
-    [data-night-mode] section.search-results-dropdown aside.go-to-object>ul>li>ul>li:not(:hover) {
+    [data-night-mode] section.search-results-dropdown aside.go-to-object > ul > li > ul > li:not(:hover) {
         background: #505050;
     }
-    [data-night-mode] section.search-results-dropdown section.stream>.content>footer a:not(.active-select) {
+    [data-night-mode] section.search-results-dropdown section.stream > .content > footer a:not(.active-select) {
         background: #2c2c2c !important;
     }
-    [data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong {
+    [data-night-mode] section.search-results-dropdown section.stream > .content > section article.entries > .content ul li > a > strong {
         color: #39a684;
     }
-    [data-night-mode] section.search-results-dropdown section.stream>.content>section article.entries>.content ul li>a>strong:before {
+    [data-night-mode] section.search-results-dropdown section.stream > .content > section article.entries > .content ul li > a > strong:before {
         background: #39a684;
     }
     [data-night-mode] section.search-input form .popper-button button {
@@ -503,7 +503,7 @@
         background-size: cover;
     }
     [data-night-mode] section.entry-comments section.editor.expand.inner textarea::-webkit-resizer,
-    [data-night-mode] section.entry section.editor.expand.inner textarea::-webkit-resizer{
+    [data-night-mode] section.entry section.editor.expand.inner textarea::-webkit-resizer {
         background-color: #1c1c1c !important;
     }
     [data-night-mode] section.microblog section.editor textarea::-webkit-resizer,
@@ -512,7 +512,7 @@
     [data-night-mode] section.link-page section.editor textarea::-webkit-resizer {
         background-color: #2c2c2c !important;
     }
-    [data-night-mode] section.editor>.content textarea {
+    [data-night-mode] section.editor > .content textarea {
         resize: vertical;
         max-height: none;
     }
@@ -520,42 +520,42 @@
         border: 1px solid #1c1c1c !important;
         background: #1c1c1c !important;
     }
-    [data-night-mode] section.survey>.content:before, 
-    [data-night-mode] section.survey>.content:after {
+    [data-night-mode] section.survey > .content:before,
+    [data-night-mode] section.survey > .content:after {
         background: #1c1c1c !important;
     }
-    [data-night-mode] section.survey>.content ul li i {
+    [data-night-mode] section.survey > .content ul li i {
         background: #3c3c3c !important;
         border: none !important;
     }
-    [data-night-mode] section.survey>.content ul li:hover {
+    [data-night-mode] section.survey > .content ul li:hover {
         border-color: #3c3c3c;
     }
     [data-night-mode] .popper-button.onboarding-btn {
         display: none;
     }
-    [data-night-mode] section.new-entry>div.button>.target {
+    [data-night-mode] section.new-entry > div.button > .target {
         background: #505050;
         color: #cad0d0;
     }
-    [data-night-mode] section.search-input form>a {
+    [data-night-mode] section.search-input form > a {
         -webkit-box-shadow: 0 5px 4px 0 #1c1c1c !important;
         box-shadow: 0 5px 4px 0 #1c1c1c !important;
         background: #2c2c2c !important;
     }
-    [data-night-mode] aside.advanced>.content section.options ul li label {
+    [data-night-mode] aside.advanced > .content section.options ul li label {
         color: #cad0d0;
         border: 1px solid #505050;
     }
-    [data-night-mode] aside.advanced>.content section input,
-    [data-night-mode] aside.advanced>.content section.select select {
+    [data-night-mode] aside.advanced > .content section input,
+    [data-night-mode] aside.advanced > .content section.select select {
         background: #1c1c1c !important;
     }
-    [data-night-mode] aside.advanced>.content section input::placeholder {
+    [data-night-mode] aside.advanced > .content section input::placeholder {
         color: #666666 !important;
     }
-    [data-night-mode] section.link-block>section>article>header h2 a:visited,
-    [data-night-mode] section.link-block>section>article section.info>p a:visited{
+    [data-night-mode] section.link-block > section > article > header h2 a:visited,
+    [data-night-mode] section.link-block > section > article section.info > p a:visited {
         color: #7b7b7b;
     }
     [data-night-mode] nav.new-pagination.hash ul li.disabled a {
@@ -564,9 +564,9 @@
     [data-night-mode] nav.new-pagination.hash ul li.disabled a:after {
         background: #505050;
     }
-    [data-night-mode] nav.new-pagination.number li.prev.disabled>span:after, 
-    [data-night-mode] nav.new-pagination.number li.prev.disabled a:after, 
-    [data-night-mode] nav.new-pagination.number li.next.disabled>span:after, 
+    [data-night-mode] nav.new-pagination.number li.prev.disabled > span:after,
+    [data-night-mode] nav.new-pagination.number li.prev.disabled a:after,
+    [data-night-mode] nav.new-pagination.number li.next.disabled > span:after,
     [data-night-mode] nav.new-pagination.number li.next.disabled a:after {
         background: #505050 !important;
     }
@@ -582,16 +582,16 @@
     [data-night-mode] section.vote-box:not(.voted) .dig button {
         color: var(--whitish) !important;
     }
-    [data-night-mode] .content>section.info time.date,
-    [data-night-mode] section.link-block>section>article section.info>span time {
+    [data-night-mode] .content > section.info time.date,
+    [data-night-mode] section.link-block > section > article section.info > span time {
         color: var(--steelBluish);
     }
     [data-night-mode] footer.footer > nav ul li:not(:last-of-type):after,
-    [data-night-mode] section.metrics>.content ul li:before,
-    [data-night-mode] footer.footer>nav ul li.more:after{
+    [data-night-mode] section.metrics > .content ul li:before,
+    [data-night-mode] footer.footer > nav ul li.more:after {
         background: var(--abbey);
     }
-    [data-night-mode] section.entry>article>header {
+    [data-night-mode] section.entry > article > header {
         align-items: flex-start;
         column-gap: 16px;
     }
@@ -599,33 +599,33 @@
         height: 36px !important;
         width: 36px !important;
     }
-    [data-night-mode] section.entry>article .edit-wrapper {
+    [data-night-mode] section.entry > article .edit-wrapper {
         margin-left: 52px;
     }
-    [data-night-mode] section.entry>article>header+.edit-wrapper {
+    [data-night-mode] section.entry > article > header + .edit-wrapper {
         margin-top: 0;
     }
-    [data-night-mode] section.entry>article>header {
+    [data-night-mode] section.entry > article > header {
         -webkit-transform: none;
         transform: none;
         max-height: 20px;
     }
-    [data-night-mode] section.entry>article>header>div.right>div>span {
+    [data-night-mode] section.entry > article > header > div.right > div > span {
         color: #767676;
     }
-    [data-night-mode] section.entry>article>header>div.right {
+    [data-night-mode] section.entry > article > header > div.right {
         line-height: 10px;
     }
-    [data-night-mode] section.entry>article>header>div.right>div+div {
+    [data-night-mode] section.entry > article > header > div.right > div + div {
         margin: 0 0 0 8px;
     }
-    [data-night-mode] section.entry>article .edit-wrapper>* ~ * {
+    [data-night-mode] section.entry > article .edit-wrapper > * ~ * {
         margin-top: 3px;
     }
     [data-night-mode] a.avatar figure.male:before {
         background: #4983ad;
     }
-    [data-night-mode] section.stream>.content>section.entry.reply {
+    [data-night-mode] section.stream > .content > section.entry.reply {
         margin-top: 8px;
         -webkit-box-shadow: 0px 3px 5px 0 #1c1c1c91 !important;
         box-shadow: 0px 3px 5px 0 #1c1c1c91 !important;
@@ -636,18 +636,18 @@
     [data-night-mode] .v--modal-overlay {
         background: #1c1c1cc9;
     }
-    [data-night-mode] section.rating-box>ul+.buttons {
+    [data-night-mode] section.rating-box > ul + .buttons {
         margin-left: 8px;
     }
-    [data-night-mode] nav.mobile-navbar>ul>li a>span:after {
+    [data-night-mode] nav.mobile-navbar > ul > li a > span:after {
         background: #cad0d0;
     }
-    [data-night-mode] nav.mobile-navbar>ul>li a {
+    [data-night-mode] nav.mobile-navbar > ul > li a {
         color: #cad0d0;
     }
-    [data-night-mode] section.rating-box>ul li.plus,
-    [data-night-mode] section.rating-box>ul li.minus,
-    [data-night-mode] section.rating-box>ul li {
+    [data-night-mode] section.rating-box > ul li.plus,
+    [data-night-mode] section.rating-box > ul li.minus,
+    [data-night-mode] section.rating-box > ul li {
         min-width: max-content;
     }
     [data-night-mode] .cool-lightbox {
@@ -658,9 +658,9 @@
         box-shadow: none;
     }
     [data-night-mode] .conversation-list .date {
-        color: #aaa  !important;
+        color: #aaa !important;
     }
-    [data-night-mode] .conversation-list> section .search, 
+    [data-night-mode] .conversation-list > section .search,
     [data-night-mode] .conversation-list .popper-button button:not(:hover) {
         background: var(--abbey) !important;
     }
@@ -679,7 +679,7 @@
     [data-night-mode] section.popper.domain-actions {
         background: #3c3c3c;
     }
-    [data-night-mode] aside.hits-slider .swiper-container>button:hover {
+    [data-night-mode] aside.hits-slider .swiper-container > button:hover {
         background-color: #1c1c1cc9;
     }
     [data-night-mode] section.popper .popper__arrow {
@@ -690,13 +690,13 @@
     [data-night-mode] section.entry section.editor textarea {
         font-family: Arial;
     }
-    [data-night-mode] section.entry>.comments>footer {
+    [data-night-mode] section.entry > .comments > footer {
         margin-top: -14px;
     }
-    [data-night-mode] section.entry>.comments>footer>div>button.target:hover {
+    [data-night-mode] section.entry > .comments > footer > div > button.target:hover {
         background: #2c2c2c;
     }
-    [data-night-mode] section.entry>.comments>footer>div>button.target {
+    [data-night-mode] section.entry > .comments > footer > div > button.target {
         background: #3c3c3c;
     }
     [data-night-mode] section.entry.reply {
@@ -713,44 +713,44 @@
         -webkit-filter: drop-shadow(0 0 6px #1c1c1cc9);
         filter: drop-shadow(0 0 6px #1c1c1cc9);
     }
-    [data-night-mode] aside.profile-top>section>header>ul li.report:before, 
-    [data-night-mode] aside.profile-top>section>header>ul li.blacklist:before,
-    [data-night-mode] aside.profile-top>section>header>ul li.blacklist:after {
+    [data-night-mode] aside.profile-top > section > header > ul li.report:before,
+    [data-night-mode] aside.profile-top > section > header > ul li.blacklist:before,
+    [data-night-mode] aside.profile-top > section > header > ul li.blacklist:after {
         background: var(--steelBluish);
     }
-    [data-night-mode] .toast-container>div {
+    [data-night-mode] .toast-container > div {
         background: #2c2c2c;
     }
-    [data-night-mode] .toast-container>div.toast-success .toast-title {
+    [data-night-mode] .toast-container > div.toast-success .toast-title {
         color: var(--steelBluish);
     }
-    [data-night-mode] .toast-container>div.toast-success {
+    [data-night-mode] .toast-container > div.toast-success {
         border-bottom-color: #4383af;
     }
-    [data-night-mode] section.voters section>.content>ul li>section>p {
+    [data-night-mode] section.voters section > .content > ul li > section > p {
         color: var(--tuna) !important;
     }
-    [data-night-mode] section.voters section>.content>ul li>section time.date {
+    [data-night-mode] section.voters section > .content > ul li > section time.date {
         color: #767676;
     }
-    [data-night-mode] section.entries-sidebar section.entry>header {
+    [data-night-mode] section.entries-sidebar section.entry > header {
         gap: 8px;
     }
-    [data-night-mode] section.entries-sidebar section.entry>header>.right>div>span {
+    [data-night-mode] section.entries-sidebar section.entry > header > .right > div > span {
         color: #39a684;
     }
-    [data-night-mode] section.entry section.actions ul.dropdown:not(.clear-styles).icon>li span:not(:hover):before {
+    [data-night-mode] section.entry section.actions ul.dropdown:not(.clear-styles).icon > li span:not(:hover):before {
         background: #767676;
     }
-    [data-night-mode] section.user-info>footer ul.icons li:not(:hover):before, 
-    [data-night-mode] section.user-info>footer ul.icons li:after {
+    [data-night-mode] section.user-info > footer ul.icons li:not(:hover):before,
+    [data-night-mode] section.user-info > footer ul.icons li:after {
         background: var(--steelBluish) !important;
     }
-    [data-night-mode] section.entry:hover>article .edit-wrapper>footer section.actions ul li {
+    [data-night-mode] section.entry:hover > article .edit-wrapper > footer section.actions ul li {
         opacity: 1;
         transition: opacity .3s ease, color .2s ease;
     }
-    [data-night-mode] section.entry>article .edit-wrapper>footer section.actions ul li {
+    [data-night-mode] section.entry > article .edit-wrapper > footer section.actions ul li {
         opacity: 0;
         transition: opacity .3s ease, color .2s ease;
     }
@@ -761,56 +761,56 @@
     [data-night-mode] section.rating-box .buttons button.plus:not(.voted),
     [data-night-mode] section.rating-box .buttons button.minus:not(.voted),
     [data-night-mode] section.related-rating-box .buttons button.plus:not(.voted),
-    [data-night-mode] section.related-rating-box .buttons button.minus:not(.voted){
+    [data-night-mode] section.related-rating-box .buttons button.minus:not(.voted) {
         background: #3c3c3c;
         border: 2px solid #3c3c3c !important;
     }
-    [data-night-mode] section.link-block:not(.detailed)>section {
+    [data-night-mode] section.link-block:not(.detailed) > section {
         min-height: 182px;
     }
-    [data-night-mode] section.link-block:not(.detailed)>section>article {
+    [data-night-mode] section.link-block:not(.detailed) > section > article {
         width: calc(100% - 73px);
         padding: 12px 12px 12px 232px;
     }
-    [data-night-mode] section.link-block:not(.detailed)>section>article figure {
+    [data-night-mode] section.link-block:not(.detailed) > section > article figure {
         top: 12px !important;
         left: 0;
     }
-    [data-night-mode] section.link-block>section>aside {
+    [data-night-mode] section.link-block > section > aside {
         width: 73px;
     }
     [data-night-mode] section.link-block section.vote-box {
         margin: 12px 0;
     }
-    [data-night-mode] section.link-block>section>article figure {
+    [data-night-mode] section.link-block > section > article figure {
         height: 158px;
     }
-    [data-night-mode] section.link-block>section>article * {
+    [data-night-mode] section.link-block > section > article * {
         transition: color .2s ease, background .2s ease !important;
     }
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article section.actions a:hover {
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article section.actions a:hover {
         color: #cad0d0;
     }
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article section.actions a:hover:before {
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article section.actions a:hover:before {
         background: #cad0d0;
     }
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article section.actions a, 
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.actions span {
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article section.actions a,
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article:not(:hover) section.actions span {
         color: #7b7b7b;
     }
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span,
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span a,
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span span,
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span time {
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article:not(:hover) section.info > span,
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article:not(:hover) section.info > span a,
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article:not(:hover) section.info > span span,
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) > section > article:not(:hover) section.info > span time {
         color: #7b7b7b !important
     }
-    [data-night-mode] section.link-block.mobile>section>article section.info>span>a.username>span {
+    [data-night-mode] section.link-block.mobile > section > article section.info > span > a.username > span {
         color: inherit;
     }
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed) span.comment-counter:before, 
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) span.comment-counter:before,
     [data-night-mode] section.link-block:not(.mobile):not(.detailed) a.comment-counter:before,
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed) span.comment-counter:after, 
-    [data-night-mode] section.link-block:not(.mobile):not(.detailed) section.actions>ul>li:not(.tag):after {
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) span.comment-counter:after,
+    [data-night-mode] section.link-block:not(.mobile):not(.detailed) section.actions > ul > li:not(.tag):after {
         background: #7b7b7b;
     }
     [data-night-mode] section.link-block.detailed:not(.mobile):not(.detailed) button.toggle-to-favourite .svg-inline svg .border {
@@ -825,7 +825,7 @@
     [data-night-mode] section.link-block.detailed:not(.mobile):not(.detailed) button.toggle-to-favourite:hover {
         color: #cad0d0;
     }
-    [data-night-mode] section.link-block>section>article figure.embed .svg-inline svg {
+    [data-night-mode] section.link-block > section > article figure.embed .svg-inline svg {
         fill: #cad0d0;
         -webkit-filter: drop-shadow(0 0 6px #1c1c1cc9);
         filter: drop-shadow(0 0 6px #1c1c1cc9);
@@ -839,10 +839,10 @@
     [data-night-mode] section.modal:not(.registration):not(.login) .form-elements input {
         border: 1px solid #3c3c3c;
     }
-    [data-night-mode] section>div>section.entry article {
+    [data-night-mode] section > div > section.entry article {
         padding-bottom: 4px;
     }
-    [data-night-mode] section.entry>article>header>div.right>div:first-child {
+    [data-night-mode] section.entry > article > header > div.right > div:first-child {
         transform: translateY(-4px);
     }
     [data-night-mode] section.adding-page input {
@@ -861,17 +861,17 @@
         background: #1c1c1c !important;
     }
     [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbox.ce-toolbox--opened,
-    [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbox.ce-toolbox--opened>li:hover{
+    [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbox.ce-toolbox--opened > li:hover {
         background-color: #1c1c1c !important;
     }
     [data-night-mode] section.article-editor .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-paragraph:before {
         color: #666;
     }
-    [data-night-mode] section.article-editor .codex-editor .ce-toolbox>li svg,
+    [data-night-mode] section.article-editor .codex-editor .ce-toolbox > li svg,
     [data-night-mode] section.article-editor .codex-editor svg {
         fill: #666 !important;
     }
-    [data-night-mode] section.article-editor .codex-editor .ce-toolbox>li:hover svg,
+    [data-night-mode] section.article-editor .codex-editor .ce-toolbox > li:hover svg,
     [data-night-mode] section.article-editor .codex-editor svg:hover {
         fill: var(--tuna) !important;
     }
@@ -896,8 +896,7 @@
         border: 1px solid #505050;
         background-color: #505050;
     }
-    [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings
-    {
+    [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings {
         background: #2c2c2c !important;
     }
     [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings .ce-settings__button {
@@ -906,10 +905,10 @@
     [data-night-mode] section.article-editor .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings .ce-settings__button:hover {
         background: #3c3c3c !important;
     }
-    [data-night-mode] header.static-top.article>div:after {
+    [data-night-mode] header.static-top.article > div:after {
         background: transparent;
     }
-    [data-night-mode] header.static-top.article>div time {
+    [data-night-mode] header.static-top.article > div time {
         color: var(--abbey);
     }
     [data-night-mode] section.editor.expand .switch label span {
@@ -924,8 +923,8 @@
     [data-night-mode] .form-elements p:not(.popper).info-rules {
         color: #7b7b7b;
     }
-    [data-night-mode] .form-elements p:not(.popper).info-rules>a {
-            color: #7b7b7b !important;
+    [data-night-mode] .form-elements p:not(.popper).info-rules > a {
+        color: #7b7b7b !important;
     }
     [data-night-mode] section.login.modal p.register,
     [data-night-mode] section.registration.modal p.login {
@@ -936,7 +935,7 @@
     [data-night-mode] section.registration input::placeholder {
         color: #666 !important;
     }
-    [data-night-mode] form.registration div.checkbox input:not(:checked)+label:before {
+    [data-night-mode] form.registration div.checkbox input:not(:checked) + label:before {
         border: 2px solid #3c3c3c;
     }
 }
