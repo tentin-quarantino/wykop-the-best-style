@@ -73,6 +73,19 @@
         }
     }
     @media (max-width: 640px) {
+        if (commentsCompactMode) {
+            [data-night-mode] section.entry > .comments > footer {
+                margin-top: 8px !important;
+                height: 10px !important;
+            }
+            [data-night-mode] section.entry > .comments > footer > div {
+                margin-top: 0 !important;
+            }
+        } else {
+            [data-night-mode] section.entry > .comments > footer > div {
+                margin-top: 0 !important;
+            }
+        }
         [data-night-mode] section.entry > article .edit-wrapper {
             margin-left: 0 !important;
         }
@@ -117,10 +130,36 @@
             }
         }
     }
-    @media (max-width: 720px) {
-        [data-night-mode] section.entry > .comments > footer {
-            margin-top: 8px !important;
+    @media (min-width: 641px) and (max-width: 720px) {
+        if (commentsCompactMode) {
+            [data-night-mode] section.entry > .comments > footer {
+                margin-top: 0 !important;
+                height: 0 !important;
+            }
+            [data-night-mode] section.entry > .comments > footer > div {
+                margin-top: 0 !important;
+            }
+        } else {
+            [data-night-mode] section.entry > .comments > footer > div {
+                margin-top: 0 !important;
+            }
         }
+    }
+    @media (min-width: 721px) {
+        if (commentsCompactMode) {
+            [data-night-mode] section.entry > .comments > footer {
+                margin-top: 0 !important;
+                height: 0 !important;
+            }
+            [data-night-mode] section.entry > .comments > footer > div {
+                margin-top: 0 !important;
+            }
+        } else {
+            [data-night-mode] section.entry > .comments > footer > div {
+                margin-top: -25px !important;
+            }
+        }
+
     }
 
     if (!showDefaultCategories) {
@@ -800,8 +839,7 @@
     [data-night-mode] section.entry section.editor textarea {
         font-family: Arial;
     }
-    [data-night-mode] section.entry > .comments > footer {
-        margin-top: -14px;
+    [data-night-mode] section.entry > .comments > footer > div {
         z-index: 1;
     }
     [data-night-mode] section.entry > .comments > footer > div > button.target:hover,
