@@ -32,6 +32,7 @@
         }
         [data-night-mode] section.entry > article > header > div.right > div > span > a + i {
             display: block !important;
+            margin-left: 0 !important;
         }
         [data-night-mode] section.entry:not(.reply) > article .edit-wrapper {
             margin-top: 8px !important;
@@ -628,12 +629,8 @@
         align-items: flex-start;
         column-gap: 16px;
     }
-    [data-night-mode] section.entry a.avatar {
-        height: 36px !important;
-        width: 36px !important;
-    }
     [data-night-mode] section.entry > article .edit-wrapper {
-        margin-left: 52px;
+        margin-left: 56px;
     }
     [data-night-mode] section.entry > article > header + .edit-wrapper {
         margin-top: 0;
