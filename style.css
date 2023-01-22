@@ -14,7 +14,8 @@
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."   1
 @var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"     1
 @var checkbox showUpvotingUsers         "Lista plusujących"            1
-@var range    microblogEntryMargin      "Odstępy między wpisami na mirko" [16, 1, 64, 1, 'px']
+@var range    desktopEntriesMargin      "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
+@var range    mobileEntriesMargin       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -37,10 +38,18 @@
         [data-night-mode] section.link-page section.entry > article .edit-wrapper {
             margin-top: 0 !important;
         }
+        [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
+            margin-top: mobileEntriesMargin !important;
+        }
     }
     @media (min-width: 534px) and (max-width: 640px) {
         [data-night-mode] section.entry > article .edit-wrapper {
             margin-top: 8px !important;
+        }
+    }
+    @media (min-width: 534px) {
+        [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
+            margin-top: desktopEntriesMargin !important;
         }
     }
     @media (max-width: 640px) {
@@ -115,9 +124,6 @@
         [data-night-mode] section.entry .entry-voters {
             display: none !important;
         }
-    }
-    [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
-        margin-top: microblogEntryMargin !important;
     }
 
     [data-night-mode],
