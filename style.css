@@ -768,7 +768,8 @@ nav.new-pagination.number li.prev>span {
 }
 [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span,
 [data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span a,
-[data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span span {
+[data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span span,
+[data-night-mode] section.link-block:not(.mobile):not(.detailed)>section>article:not(:hover) section.info>span time {
     color: #7b7b7b!important
 }
 [data-night-mode] section.link-block.mobile>section>article section.info>span>a.username>span {
