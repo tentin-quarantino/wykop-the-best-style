@@ -116,7 +116,7 @@
             display: none !important;
         }
     }
-    [data-night-mode] .entry:not(.reply) {
+    [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
         margin-top: microblogEntryMargin !important;
     }
 
