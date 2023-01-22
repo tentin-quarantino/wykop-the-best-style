@@ -12,6 +12,8 @@
 @var checkbox showLinksSlider           "Panel hitów na głównej"       1
 @var checkbox showDoodle                "Obrazki w nagłówku"           1
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."   1
+@var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"     1
+
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -100,6 +102,11 @@
     }
     if (!showSourceDevice) {
         [data-night-mode] .entry .right > div > span > i {
+            display: none !important;
+        }
+    }
+    if (!showEntryOnHomepage) {
+        [data-night-mode] section.home-page > section.home .entry {
             display: none !important;
         }
     }
