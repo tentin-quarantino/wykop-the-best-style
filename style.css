@@ -17,6 +17,7 @@
 @var checkbox showUpvotingUsers         "Lista plusujących"                 1
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"             0
 @var checkbox angularVikop              "Kanciasty Wykop"                   0
+@var checkbox transparentAvatars        "Awatary bez tła"                   1
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka\n(Mobilne)"   0
 @var range    entriesMarginPC           "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
@@ -264,6 +265,12 @@
         [data-night-mode] *::before,
         [data-night-mode] *::after  {
             border-radius: 0 !important
+        }
+    }
+    if (transparentAvatars) {
+        [data-night-mode] aside.profile-top > section > header > a.avatar figure img {
+            border: 5px solid transparent
+            background: none
         }
     }
 
