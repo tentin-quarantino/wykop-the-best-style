@@ -77,7 +77,6 @@
         if (commentsCompactMode) {
             [data-night-mode] section.entry > .comments > footer {
                 margin-top: 8px !important;
-                height: 10px !important;
             }
             [data-night-mode] section.entry > .comments > footer > div {
                 margin-top: 0 !important;
@@ -135,7 +134,6 @@
         if (commentsCompactMode) {
             [data-night-mode] section.entry > .comments > footer {
                 margin-top: 0 !important;
-                height: 0 !important;
             }
             [data-night-mode] section.entry > .comments > footer > div {
                 margin-top: 0 !important;
@@ -150,7 +148,6 @@
         if (commentsCompactMode) {
             [data-night-mode] section.entry > .comments > footer {
                 margin-top: 0 !important;
-                height: 0 !important;
             }
             [data-night-mode] section.entry > .comments > footer > div {
                 margin-top: 0 !important;
