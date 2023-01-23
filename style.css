@@ -97,6 +97,14 @@
                 margin-top: 0 !important
             }
         }
+        if (!showThumbnailsOnHomepage) {
+            [data-night-mode] section.link-block:not(.detailed) > section > article > div > figure {
+                display: none !important
+            }
+            [data-night-mode] section.link-block:not(.detailed) > section > article {
+                padding: 12px 12px 12px 0 !important
+            }
+        }
         [data-night-mode] section.entry > article .edit-wrapper {
             margin-left: 0 !important
         }
@@ -124,6 +132,7 @@
             width: 100% !important
             padding: 8px 8px 0 8px !important
         }
+        
         [data-night-mode] section > div > section.entry > article {
             padding-bottom: 4px !important
         }
@@ -137,6 +146,16 @@
             }
             [data-night-mode] section.entry.reply > article {
                 padding-right: 0 !important
+            }
+        }
+    }
+    @media (min-width: 641px) {
+        if (!showThumbnailsOnHomepage) {
+            [data-night-mode] section.link-block:not(.detailed) > section > article > figure {
+                display: none !important
+            }
+            [data-night-mode] section.link-block:not(.detailed) > section > article {
+                padding: 12px 12px 12px 0 !important
             }
         }
     }
