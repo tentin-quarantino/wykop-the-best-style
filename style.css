@@ -1118,4 +1118,13 @@
     [data-night-mode] section.rating-box > ul li.separated.zero {
         color: #39a684
     }
+    [data-night-mode] section.link-block > section > article .avatar figure {
+        height: 100%
+    }
+    [data-night-mode] section.vote-box.voted .burry:not(.active)>span {
+        color: #aaa
+    }
+    [data-night-mode] section.code-block.block {
+        background-color: #1c1c1c
+    }
 }
