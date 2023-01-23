@@ -152,6 +152,9 @@
     }
     @media (min-width: 641px) {
         if (!showThumbnailsOnHomepage) {
+            [data-night-mode] section.link-block:not(.detailed) > section {
+                min-height: auto !important
+            }
             [data-night-mode] section.link-block:not(.detailed) > section > article > figure {
                 display: none !important
             }
