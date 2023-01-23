@@ -22,7 +22,13 @@
 @var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"       [1260, 1000, 2500, 10, 'px']
 @var range    entriesMarginPC           "Odstępy między wpisami (PC)"       [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami (Mobilne)"  [16, 1, 64, 1, 'px']
-@var select   entriesFont               "Font wpisów i komentarzy"          ["Arial*", "Open Sans", "Verdana", "Comic Sans MS", "Consolas"]
+@var select   entriesFont               "Font wpisów i komentarzy"          {
+    "arial:Arial (domyślna Wykop the best style)*": "Arial",
+    "open_sans:Open Sans (oficjalny Wykop 2.0)": "Open Sans",
+    "verdana:Verdana": "Verdana",
+    "comic_sans_ms:Comic Sans MS": "Comic Sans MS",
+    "consolas:Consolas": "Consolas"
+}
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
