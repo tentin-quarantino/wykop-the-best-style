@@ -47,6 +47,11 @@
         [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
             margin-top: entriesMarginMobile !important
         }
+        if (!showSourceDevice) {
+            [data-night-mode] section.entry > article > header > div.right > div > span > a + i {
+                visibility: hidden !important
+            }
+        }
         if (nonStickyHeaderBarMobile) {
             [data-night-mode] header.header {
                 position: relative !important
@@ -61,6 +66,11 @@
     @media (min-width: 534px) {
         [data-night-mode] .content>.entry:not(:first-child):not(.reply) {
             margin-top: entriesMarginPC !important
+        }
+        if (!showSourceDevice) {
+            [data-night-mode] section.entry > article > header > div.right > div > span > a + i {
+                display: none !important
+            }
         }
         if (commentsCompactMode) {
             [data-night-mode] section.entry.reply {
@@ -173,11 +183,6 @@
     if (!showDoodle) {
 
         [data-night-mode] .header aside.doodle {
-            display: none !important
-        }
-    }
-    if (!showSourceDevice) {
-        [data-night-mode] .entry .right > div > span > i {
             display: none !important
         }
     }
