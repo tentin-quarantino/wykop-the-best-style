@@ -31,6 +31,7 @@
     "comic_sans_ms:Comic Sans MS": "Comic Sans MS",
     "consolas:Consolas": "Consolas"
 }
+@var select    entriesFontWeight        "Font wpisów i komentarzy (grubość)" ["100*", "200", "300", "400", "500", "600", "700", "800", "900"]
 @var color     entriesFontColor         "Font wpisów i komentarzy (kolor)"   #c4c8c9
 @var number    entriesFontSize          "Font wpisów i komentarzy (rozmiar)" [14, 10, 28, 1, 'px']
 @var number    entriesFontLineHeight    "Font wpisów i komentarzy (odstępy)" [20, 10, 32, 1, 'px']
@@ -914,6 +915,7 @@
     [data-night-mode] section.entry .edit-wrapper > .survey span {
         font-family: entriesFont;
         font-size: entriesFontSize;
+        font-weight: entriesFontWeight;
         line-height: entriesFontLineHeight;
         color: entriesFontColor;
     }
