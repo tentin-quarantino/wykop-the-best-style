@@ -1137,17 +1137,16 @@
     [data-night-mode] section.code-block.block {
         background-color: #1c1c1c;
     }
-    
     [data-night-mode] section.ranking-page > section.ranking table tbody tr td.left > section .right time {
-        color: var(--abbey)
+        color: var(--abbey);
     }
-    [data-night-mode] section.ranking-page > section.ranking table > tbody > tr.self > td{
-        background: #4c4c4c
+    [data-night-mode] section.ranking-page > section.ranking table > tbody > tr.self > td {
+        background: #4c4c4c;
     }
     [data-night-mode] section.ranking table > tbody > tr.self > td:first-of-type {
-        word-break: keep-all
+        word-break: keep-all;
     }
     [data-night-mode] section.ranking-page > section.ranking table tbody tr.self td.left > section .right time {
-        color: #aaa
+        color: #aaa;
     }
 }
