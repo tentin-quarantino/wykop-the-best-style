@@ -12,6 +12,7 @@ Przejrzysty styl dla Wykopu, wyposażony w opcje, które pozwalają dostosować 
 ## Jak włączyć
 1. Pobieramy rozszerzenie [Stylus](https://github.com/openstyles/stylus/) dla [Chrome (Chromium)](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/) / [Opera](https://addons.opera.com/extensions/details/stylus/)
 2. Instalujemy styl ze strony: https://userstyles.world/style/8154/wykop-the-best-style
+3. Włączamy tryb nocny na wykop.pl w lewym dolnym rogu
 
 ## Jak zmieniać opcje
 ![alt opcje](https://wykop.pl/cdn/c3201142/6bbe765aac47215e2b3e732babcbdf7564230ac7a12ed0dad17b309f33b85a70.png)
