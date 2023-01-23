@@ -9,7 +9,8 @@
 @license      CC BY 4.0
 @preprocessor stylus
 @var checkbox showLinksSlider           "Panel hitów na głównej"            1
-@var checkbox showEntryOnHomepage       "Wpisy na stronie głównej"          1
+@var checkbox showEntryOnHomepage       "Wpisy na głównej"                  1
+@var checkbox showThumbnailsOnHomepage  "Miniatury na głównej"              1
 @var checkbox showDefaultCategories     "Domyślne kategorie"                1
 @var checkbox showDoodle                "Obrazki w nagłówku"                1
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."        1
