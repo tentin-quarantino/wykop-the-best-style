@@ -214,12 +214,6 @@
         [data-night-mode] section.entry:not(.reply) > .comments {
             margin-left: 40px !important
         }
-        [data-night-mode] .entry .wrapper > blockquote + br {
-            display: none !important
-        }
-        [data-night-mode] .entry .wrapper > blockquote {
-            margin-bottom: 4px !important
-        }
         [data-night-mode] section.entry > article .edit-wrapper > * ~ * {
             margin-top: 0 !important
         }
