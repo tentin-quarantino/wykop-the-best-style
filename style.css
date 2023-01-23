@@ -20,7 +20,7 @@
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"              0
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
 @var checkbox transparentAvatars        "Awatary bez tła"                    1
-@var checkbox  ownCategoryNotifications "Powiadomienia z własnych kategorii" 1
+@var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)" 0
 @var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 1000, 2500, 10, 'px']
 @var range    entriesMarginPC           "Odstępy między wpisami (PC)"        [16, 1, 64, 1, 'px']
@@ -1155,11 +1155,11 @@
     [data-night-mode] section.entry .edit-wrapper > .survey h4,
     [data-night-mode] section.entry .edit-wrapper > .survey p,
     [data-night-mode] section.entry .edit-wrapper > .survey span {
-        font-family: entriesFont;
-        font-size: entriesFontSize;
-        font-weight: entriesFontWeight;
-        line-height: entriesFontLineHeight;
-        color: entriesFontColor;
+        font-family: entriesFont !important;
+        font-size: entriesFontSize !important;
+        font-weight: entriesFontWeight !important;
+        line-height: entriesFontLineHeight !important;
+        color: entriesFontColor !important;
     }
 
     [data-night-mode] section.entry section.editor textarea {
