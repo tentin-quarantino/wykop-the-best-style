@@ -653,7 +653,7 @@
         background: #3c3c3c !important;
     }
 
-    [data-night-mode] .edit-wrapper > .content > section.entry-content > .wrapper blockquote,
+    [data-night-mode] .content section.entry-content > .wrapper blockquote,
     [data-night-mode] .phone input,
     [data-night-mode] .bucket-create-page input,
     [data-night-mode] .bucket-edit-page input,
@@ -668,6 +668,15 @@
     [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown,
     [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown li:nth-child(2n) {
         background: #1c1c1c !important;
+    }
+
+    [data-night-mode] section.entries-sidebar section.entry > header > .right > div > span {
+        min-width: max-content;
+    }
+
+    [data-night-mode] section.entry > header > .right > a {
+        display: block;
+        line-height: 1;
     }
 
     [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown,
