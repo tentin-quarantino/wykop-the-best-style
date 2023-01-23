@@ -8,19 +8,20 @@
 @supportURL   https://github.com/tentin-quarantino/wykop-the-best-style/issues
 @license      CC BY 4.0
 @preprocessor stylus
-@var checkbox anonymization             "Anonimizacja (⌐ ͡■ ͜ʖ ͡■)"            0
-@var checkbox showLinksSlider           "Panel hitów na głównej"            1
-@var checkbox showEntryOnHomepage       "Wpisy na głównej"                  1
-@var checkbox showThumbnailsOnHomepage  "Miniatury na głównej"              1
-@var checkbox showDefaultCategories     "Domyślne kategorie"                1
-@var checkbox showDoodle                "Obrazki w nagłówku"                1
-@var checkbox showFloatingButtons       "Przyciski po prawej"               1
-@var checkbox showSourceDevice          "via Wykop, via Mobile etc."        1
-@var checkbox showUpvotingUsers         "Lista plusujących"                 1
-@var checkbox commentsCompactMode       "Kompaktowe komentarze"             0
-@var checkbox angularVikop              "Kanciasty Wykop"                   0
-@var checkbox transparentAvatars        "Awatary bez tła"                   1
-@var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)"   0
+@var checkbox anonymization             "Anonimizacja (⌐ ͡■ ͜ʖ ͡■)"             0
+@var checkbox showLinksSlider           "Panel hitów na głównej"             1
+@var checkbox showEntryOnHomepage       "Wpisy na głównej"                   1
+@var checkbox showThumbnailsOnHomepage  "Miniatury na głównej"               1
+@var checkbox showDefaultCategories     "Domyślne kategorie"                 1
+@var checkbox showDoodle                "Obrazki w nagłówku"                 1
+@var checkbox showFloatingButtons       "Przyciski po prawej"                1
+@var checkbox showSourceDevice          "via Wykop, via Mobile etc."         1
+@var checkbox showUpvotingUsers         "Lista plusujących"                  1
+@var checkbox commentsCompactMode       "Kompaktowe komentarze"              0
+@var checkbox angularVikop              "Kanciasty Wykop"                    0
+@var checkbox transparentAvatars        "Awatary bez tła"                    1
+@var checkbox  ownCategoryNotifications "Powiadomienia z własnych kategorii" 1
+@var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)" 0
 @var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 1000, 2500, 10, 'px']
 @var range    entriesMarginPC           "Odstępy między wpisami (PC)"        [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami (Mobilne)"   [16, 1, 64, 1, 'px']
@@ -381,6 +382,12 @@
         [data-night-mode] header.header > .left > nav.main > ul li a[href="/wykopalisko"]:after {
             content: "Oczekujące" !important;
             color: #fff;
+        }
+    }
+    
+    if (!ownCategoryNotifications) {
+        [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after {
+            visibility: hidden !important;
         }
     }
 
