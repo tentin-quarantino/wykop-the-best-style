@@ -19,6 +19,7 @@
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka\n(Mobilne)"   0
 @var range    entriesMarginPC           "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
+@var select   entriesFont               "Font wpisów i komentrzy"           ["Arial*", "Open Sans", "Verdana", "Comic Sans MS", "Consolas"]
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -837,7 +838,7 @@
     [data-night-mode] section.entry-content,
     [data-night-mode] section.entry .edit-wrapper > .survey,
     [data-night-mode] section.entry section.editor textarea {
-        font-family: Arial;
+        font-family: entriesFont;
     }
     [data-night-mode] section.entry > .comments > footer > div {
         z-index: 1;
