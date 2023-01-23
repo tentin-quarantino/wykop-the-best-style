@@ -21,7 +21,7 @@
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka\n(Mobilne)"   0
 @var range    entriesMarginPC           "Odstępy między wpisami\n(PC)"      [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami\n(Mobilne)" [16, 1, 64, 1, 'px']
-@var select   entriesFont               "Font wpisów i komentrzy"           ["Arial*", "Open Sans", "Verdana", "Comic Sans MS", "Consolas"]
+@var select   entriesFont               "Font wpisów i komentarzy"           ["Arial*", "Open Sans", "Verdana", "Comic Sans MS", "Consolas"]
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
