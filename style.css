@@ -678,6 +678,17 @@
         display: block;
         line-height: 1;
     }
+    
+    [data-night-mode] section.add-to-bucket-btn > aside {
+        background-color: #1c1c1c !important;
+        border: none;
+        -webkit-box-shadow: 0 4px 4px rgb(28 28 28 / 79%) !important;
+        box-shadow: 0 4px 4px rgb(28 28 28 / 79%) !important;
+    }
+    
+    [data-night-mode] section.add-to-bucket-btn > aside > .content ul li label:before {
+        border-color: #3c3c3c !important;
+    }
 
     [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown,
     [data-night-mode] section.editor > header > ul > li.lenny-face ul.menu-dropdown {
