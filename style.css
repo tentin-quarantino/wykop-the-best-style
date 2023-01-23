@@ -20,17 +20,19 @@
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"             0
 @var checkbox angularVikop              "Kanciasty Wykop"                   0
 @var checkbox transparentAvatars        "Awatary bez tła"                   1
-@var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka\n(Mobilne)"   0
-@var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"       [1260, 1000, 2500, 10, 'px']
-@var range    entriesMarginPC           "Odstępy między wpisami (PC)"       [16, 1, 64, 1, 'px']
-@var range    entriesMarginMobile       "Odstępy między wpisami (Mobilne)"  [16, 1, 64, 1, 'px']
-@var select   entriesFont               "Font wpisów i komentarzy"          {
+@var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)"   0
+@var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 1000, 2500, 10, 'px']
+@var range    entriesMarginPC           "Odstępy między wpisami (PC)"        [16, 1, 64, 1, 'px']
+@var range    entriesMarginMobile       "Odstępy między wpisami (Mobilne)"   [16, 1, 64, 1, 'px']
+@var select   entriesFont               "Font wpisów i komentarzy"           {
     "arial:Arial (domyślna Wykop the best style)*": "Arial",
     "open_sans:Open Sans (oficjalny Wykop 2.0)": "Open Sans",
     "verdana:Verdana": "Verdana",
     "comic_sans_ms:Comic Sans MS": "Comic Sans MS",
     "consolas:Consolas": "Consolas"
 }
+@var range    entriesFontSize           "Font wpisów i komentarzy (rozmiar)" [14, 12, 28, 1, 'px']
+@var range    entriesFontLineHeight     "Font wpisów i komentarzy (odstępy)" [20, 15, 30, 1, 'px']
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @media (max-width: 533px) {
@@ -906,9 +908,16 @@
         border-color: #505050 transparent transparent transparent !important;
     }
     [data-night-mode] section.entry-content,
-    [data-night-mode] section.entry .edit-wrapper > .survey,
-    [data-night-mode] section.entry section.editor textarea {
+    [data-night-mode] section.entry .edit-wrapper > .survey h4,
+    [data-night-mode] section.entry .edit-wrapper > .survey p,
+    [data-night-mode] section.entry .edit-wrapper > .survey span {
         font-family: entriesFont;
+        font-size: entriesFontSize;
+        line-height: entriesFontLineHeight;
+        color: red;
+    }
+    [data-night-mode] section.entry section.editor textarea {
+        font-family: Arial;
     }
     [data-night-mode] section.entry > .comments > footer > div {
         z-index: 1;
