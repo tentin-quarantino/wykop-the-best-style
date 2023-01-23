@@ -8,6 +8,7 @@
 @supportURL   https://github.com/tentin-quarantino/wykop-the-best-style/issues
 @license      CC BY 4.0
 @preprocessor stylus
+@var checkbox anonymization             "Anonimizacja (⌐ ͡■ ͜ʖ ͡■)"            0
 @var checkbox showLinksSlider           "Panel hitów na głównej"            1
 @var checkbox showEntryOnHomepage       "Wpisy na głównej"                  1
 @var checkbox showThumbnailsOnHomepage  "Miniatury na głównej"              1
@@ -214,7 +215,6 @@
         }
     }
     if (!showDoodle) {
-
         [data-night-mode] .header aside.doodle {
             display: none !important;
         }
@@ -289,6 +289,33 @@
     if (!showFloatingButtons) {
         [data-night-mode] main .content > .popper-button {
             display: none !important;
+        }
+    }
+    if (anonymization) {
+        [data-night-mode] .header aside.doodle {
+            display: none !important;
+        }
+        [data-night-mode] section.search-input form > input[type=search]::placeholder {
+            color: transparent !important;
+        }
+        [data-night-mode] header.header > .left > a.logotype,
+        [data-night-mode] header.header > .left > a.logo {
+            -webkit-mask-size: 0 !important;
+            mask-size: 0 !important;
+        }
+        [data-night-mode] .left-panel > section.links li.home span.button > a > span > em {
+            display: none !important;
+        }
+        [data-night-mode] .left-panel > section.links li.home span.button > a > span:after {
+            content: "Strona główna" !important;
+            color: #fff;
+        }
+        [data-night-mode] header.header > .left > nav.main > ul li a[href="/wykopalisko"] > span {
+            display: none !important;
+        }
+        [data-night-mode] header.header > .left > nav.main > ul li a[href="/wykopalisko"]:after {
+            content: "Oczekujące" !important;
+            color: #fff;
         }
     }
 
