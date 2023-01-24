@@ -39,10 +39,11 @@
     "comic_sans_ms:Comic Sans MS": "Comic Sans MS",
     "consolas:Consolas": "Consolas"
 }
-@var select    entriesFontWeight        "Font wpisów i komentarzy (grubość)" ["100", "200", "300", "400*", "500", "600", "700", "800", "900"]
-@var color     entriesFontColor         "Font wpisów i komentarzy (kolor)"   #c4c8c9
-@var number    entriesFontSize          "Font wpisów i komentarzy (rozmiar)" [14, 10, 28, 1, 'px']
-@var number    entriesFontLineHeight    "Font wpisów i komentarzy (odstępy)" [20, 10, 32, 1, 'px']
+@var select    entriesFontWeight        "Font wpisów i komentarzy (grubość)"        ["100", "200", "300", "400*", "500", "600", "700", "800", "900"]
+@var color     entriesFontColorNight    "Font wpisów i komentarzy (kolor)(nocna)"   #c4c8c9
+@var color     entriesFontColorDay      "Font wpisów i komentarzy (kolor)(dzienna)" #363640
+@var number    entriesFontSize          "Font wpisów i komentarzy (rozmiar)"        [14, 10, 28, 1, 'px']
+@var number    entriesFontLineHeight    "Font wpisów i komentarzy (odstępy)"        [20, 10, 32, 1, 'px']
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
     @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Condensed&family=Lato&family=Noto+Sans&family=Quicksand&family=Kanit&display=swap');
@@ -256,31 +257,31 @@
     }
 
     if (!showDefaultCategories) {
-        [data-night-mode] aside.left-panel > section.links > .content ul.categories {
+        aside.left-panel > section.links > .content ul.categories {
             display: none !important;
         }
     }
 
     if (!showLinksSlider) {
-        [data-night-mode] .main-content .hits-slider > .hits-slider-stream > div {
+        .main-content .hits-slider > .hits-slider-stream > div {
             display: none !important;
         }
     }
 
     if (!showDoodle) {
-        [data-night-mode] .header aside.doodle {
+        .header aside.doodle {
             display: none !important;
         }
     }
 
     if (!showEntryOnHomepage) {
-        [data-night-mode] section.home-page > section.home .entry {
+        section.home-page > section.home .entry {
             display: none !important;
         }
     }
 
     if (!showUpvotingUsers) {
-        [data-night-mode] section.entry .entry-voters {
+        section.entry .entry-voters {
             display: none !important;
         }
     }
@@ -340,62 +341,62 @@
     }
 
     if (angularVikop) {
-        [data-night-mode] *,
-        [data-night-mode] *::before,
-        [data-night-mode] *::after {
+        *,
+        *::before,
+        *::after {
             border-radius: 0 !important;
         }
     }
 
     if (transparentAvatars) {
-        [data-night-mode] aside.profile-top > section > header > a.avatar figure img {
+        aside.profile-top > section > header > a.avatar figure img {
             border: 5px solid transparent !important;
             background: none !important;
         }
     }
 
     if (!showFloatingButtons) {
-        [data-night-mode] main .content > .popper-button {
+        main .content > .popper-button {
             display: none !important;
         }
     }
 
     if (anonymization) {
-        [data-night-mode] .header aside.doodle {
+        .header aside.doodle {
             display: none !important;
         }
 
-        [data-night-mode] section.search-input form > input[type=search]::placeholder {
+        section.search-input form > input[type=search]::placeholder {
             color: transparent !important;
         }
 
-        [data-night-mode] header.header > .left > a.logotype,
-        [data-night-mode] header.header > .left > a.logo {
+        header.header > .left > a.logotype,
+        header.header > .left > a.logo {
             -webkit-mask-size: 0 !important;
             mask-size: 0 !important;
         }
 
-        [data-night-mode] .left-panel > section.links li.home span.button > a > span > em {
+        .left-panel > section.links li.home span.button > a > span > em {
             display: none !important;
         }
 
-        [data-night-mode] .left-panel > section.links li.home span.button > a > span:after {
+        .left-panel > section.links li.home span.button > a > span:after {
             content: "Strona główna" !important;
             color: #fff;
         }
 
-        [data-night-mode] header.header > .left > nav.main > ul li a[href="/wykopalisko"] > span {
+        header.header > .left > nav.main > ul li a[href="/wykopalisko"] > span {
             display: none !important;
         }
 
-        [data-night-mode] header.header > .left > nav.main > ul li a[href="/wykopalisko"]:after {
+        header.header > .left > nav.main > ul li a[href="/wykopalisko"]:after {
             content: "Oczekujące" !important;
             color: #fff;
         }
     }
     
     if (!ownCategoryNotifications) {
-        [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after {
+        aside.left-panel > section.links > .content ul li.bucket.new:after {
             visibility: hidden !important;
         }
     }
@@ -465,11 +466,11 @@
         background: #7c7c7c !important;
     }
 
-    [data-night-mode] .switch input + label strong i:nth-child(1) {
+    .switch input + label strong i:nth-child(1) {
         border-radius: 7px !important;
     }
 
-    [data-night-mode] .switch input + label strong i:nth-child(2) {
+    .switch input + label strong i:nth-child(2) {
         border-radius: 50% !important;
     }
 
@@ -772,8 +773,8 @@
         border: none !important;
     }
 
-    [data-night-mode] .notifications.dropdown > a:after,
-    [data-night-mode] .links > .content .buckets > .bucket:after {
+    .notifications.dropdown > a:after,
+    .links > .content .buckets > .bucket:after {
         border-radius: 50% !important;
     }
 
@@ -1015,7 +1016,7 @@
         background: #505050;
     }
 
-    [data-night-mode] section.vote-box .dig p span {
+    section.vote-box .dig p span {
         border-radius: 9px !important;
     }
 
@@ -1023,11 +1024,11 @@
         color: #cad0d0;
     }
 
-    [data-night-mode] section.vote-box .dig p {
+    section.vote-box .dig p {
         border-radius: 14px !important;
     }
 
-    [data-night-mode] section.vote-box.hot .dig p:before {
+    section.vote-box.hot .dig p:before {
         border-radius: 50% !important;
     }
 
@@ -1160,15 +1161,22 @@
         border-color: #2c2c2c transparent transparent transparent !important;
     }
 
-    [data-night-mode] section.entry-content,
-    [data-night-mode] section.entry .edit-wrapper > .survey h4,
-    [data-night-mode] section.entry .edit-wrapper > .survey p,
-    [data-night-mode] section.entry .edit-wrapper > .survey span {
+    section.entry-content,
+    section.entry .edit-wrapper > .survey h4,
+    section.entry .edit-wrapper > .survey p,
+    section.entry .edit-wrapper > .survey span {
         font-family: entriesFont, Arial, system-ui, sans-serif !important;
         font-size: entriesFontSize !important;
         font-weight: entriesFontWeight !important;
         line-height: entriesFontLineHeight !important;
-        color: entriesFontColor !important;
+        color: entriesFontColorDay !important;
+    }
+
+    [data-night-mode] section.entry-content,
+    [data-night-mode] section.entry .edit-wrapper > .survey h4,
+    [data-night-mode] section.entry .edit-wrapper > .survey p,
+    [data-night-mode] section.entry .edit-wrapper > .survey span {        
+        color: entriesFontColorNight !important;
     }
 
     [data-night-mode] section.entry section.editor textarea {
@@ -1495,7 +1503,7 @@
         border: 2px solid #3c3c3c;
     }
 
-    [data-night-mode] header.header strong.upcoming-count {
+    header.header strong.upcoming-count {
         border-radius: 6px !important;
     }
 
