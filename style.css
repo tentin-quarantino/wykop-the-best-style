@@ -346,6 +346,11 @@
         *::after {
             border-radius: 0 !important;
         }
+        
+        aside.hits-slider .swiper-container .swiper-wrapper .swiper-slide a {
+            -webkit-mask: none !important;
+            mask: none !important;
+        }
     }
 
     if (transparentAvatars) {
