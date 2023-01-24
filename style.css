@@ -28,6 +28,13 @@
 @var select   entriesFont               "Font wpisów i komentarzy"           {
     "arial:Arial (domyślna Wykop the best style)*": "Arial",
     "open_sans:Open Sans (oficjalny Wykop 2.0)": "Open Sans",
+    "poppins:Poppins": "Poppins",
+    "roboto:Roboto": "Roboto",
+    "roboto_condensed:Roboto Condensed": "Roboto Condensed",
+    "lato:Lato": "Lato",
+    "noto_sans:Noto Sans": "Noto Sans",
+    "quicksand:Quicksand": "Quicksand",
+    "kanit:Kanit": "Kanit",
     "verdana:Verdana": "Verdana",
     "comic_sans_ms:Comic Sans MS": "Comic Sans MS",
     "consolas:Consolas": "Consolas"
@@ -38,6 +45,8 @@
 @var number    entriesFontLineHeight    "Font wpisów i komentarzy (odstępy)" [20, 10, 32, 1, 'px']
 ==/UserStyle== */
 @-moz-document domain("wykop.pl") {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Condensed&family=Lato&family=Noto+Sans&family=Quicksand&family=Kanit&display=swap');
+
     @media (max-width: 533px) {
         [data-night-mode] section.entry > article > header {
             margin-top: 0;
@@ -1155,7 +1164,7 @@
     [data-night-mode] section.entry .edit-wrapper > .survey h4,
     [data-night-mode] section.entry .edit-wrapper > .survey p,
     [data-night-mode] section.entry .edit-wrapper > .survey span {
-        font-family: entriesFont !important;
+        font-family: entriesFont, Arial, system-ui, sans-serif !important;
         font-size: entriesFontSize !important;
         font-weight: entriesFontWeight !important;
         line-height: entriesFontLineHeight !important;
