@@ -520,7 +520,7 @@
     allSidebarPanelsHidden = !(showSidebarLinks || showSidebarEntries || showSidebarPopularTags || showSidebarFooter);
     
     if (allSidebarPanelsHidden) {
-        .content {
+        main.main .content {
             width: 100% !important;
         }
     }
