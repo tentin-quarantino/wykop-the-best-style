@@ -451,6 +451,7 @@
 
         .left-panel > section.links li.home span.button > a > span > em {
             font-size: 0 !important;
+            line-height: 0 !important;
         }
 
         .left-panel > section.links li.home span.button > a > span > em:after {
