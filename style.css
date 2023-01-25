@@ -449,28 +449,43 @@
         }
 
         .left-panel > section.links li.home span.button > a > span > em {
-            display: none !important;
+            font-size: 0 !important;
         }
 
-        .left-panel > section.links li.home span.button > a > span:after {
+        .left-panel > section.links li.home span.button > a > span > em:after {
             content: "Strona główna" !important;
-        }
-        
-        .left-panel > section.links li.home.current span.button > a > span:after {
-            color: #fff !important;
+            font-size: 16px !important;
         }
         
         .left-panel > section.links li.home:not(.current) span.button > a > span:after {
             color: var(--steelBluish) !important;
         }
 
-        header.header > .left > nav.main > ul li a[href="/wykopalisko"] > span {
-            display: none !important;
+        header.header > .left > nav.main > ul li:nth-child(2) a > span {
+            font-size: 0 !important;
         }
 
-        header.header > .left > nav.main > ul li a[href="/wykopalisko"]:after {
+        header.header > .left > nav.main > ul li:nth-child(2) a > span:after {
             content: "Oczekujące" !important;
-            color: #fff;
+            font-size: 14px !important;
+        }
+        
+        .hits-slider > section > header > h1 {
+            font-size: 0 !important;
+        }
+        
+        .hits-slider > section > header > h1:before {
+            content: "Hity";
+            font-size: 14px !important;
+        }
+        
+        section.vote-box:not(.voted) .dig button {
+            font-size: 0 !important;
+        }
+        
+        section.vote-box:not(.voted) .dig button:after {
+            content: "Głosuj";
+            font-size: 10px !important;
         }
     }
     
