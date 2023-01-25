@@ -449,18 +449,14 @@
             mask-size: 0 !important;
         }
 
-        .left-panel > section.links li.home span.button > a > span > em {
+        .left-panel:not(.mini) > section.links li.home span.button > a > span > em {
             font-size: 0 !important;
             line-height: 0 !important;
         }
 
-        .left-panel > section.links li.home span.button > a > span > em:after {
+        .left-panel:not(.mini) > section.links li.home span.button > a > span > em:after {
             content: "Strona główna" !important;
             font-size: 16px !important;
-        }
-        
-        .left-panel > section.links li.home:not(.current) span.button > a > span:after {
-            color: var(--steelBluish) !important;
         }
 
         header.header > .left > nav.main > ul li:nth-child(2) a > span {
