@@ -21,7 +21,7 @@
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
 @var checkbox transparentAvatars        "Awatary bez tła"                    1
 @var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
-@var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 0
+@var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 1
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)" 0
 @var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 1000, 2500, 10, 'px']
 @var range    entriesMarginPC           "Odstępy między wpisami (PC)"        [16, 1, 64, 1, 'px']
@@ -141,9 +141,6 @@
 
     @media (max-width: 640px) {
         if (commentsCompactMode) {
-            .content > section.entry > article > header {
-                column-gap: 8px !important;
-            }
             section.entry > .comments > footer {
                 margin-top: 8px !important;
             }
@@ -171,7 +168,7 @@
             margin-left: 0 !important;
         }
 
-        section.entry > article > header {
+        .content section.entry > article > header {
             column-gap: 8px !important;
         }
 
