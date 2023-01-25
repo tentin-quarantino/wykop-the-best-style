@@ -27,7 +27,9 @@
 @var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
 @var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 1
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)" 0
-@var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 1000, 2500, 10, 'px']
+@var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 860, 2500, 10, 'px']
+@var checkbox mainContentCentered       "Strona wyśrodkowana  (PC)"          1
+@var range    mainContentLeftMargin     "Odsunięcie strony od lewej (PC)"    [0, 0, 50, 1, '%']
 @var range    entriesMarginPC           "Odstępy między wpisami (PC)"        [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami (Mobilne)"   [16, 1, 64, 1, 'px']
 @var select   entriesFont               "Font wpisów i komentarzy"           {
@@ -506,6 +508,13 @@
     if (allSidebarPanelsHidden) {
         .content {
             width: 100% !important;
+        }
+    }
+    
+    if (!mainContentCentered) {
+        main.main > section,
+        main.main > aside.wide-top {
+            margin: 6px 0 0 mainContentLeftMargin !important;
         }
     }
 
