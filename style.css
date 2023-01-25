@@ -10,6 +10,10 @@
 @preprocessor stylus
 @var checkbox anonymization             "Anonimizacja (⌐ ͡■ ͜ʖ ͡■)"             0
 @var checkbox showLinksSlider           "Panel hitów na głównej"             1
+@var checkbox showSidebarLinks          "Panel boczny Znaleziska"            1
+@var checkbox showSidebarEntries        "Panel boczny Wpisy"                 1
+@var checkbox showSidebarPopularTags    "Panel boczny Popularne tagi"        1
+@var checkbox showSidebarFooter         "Panel boczny Stopka"                1
 @var checkbox showEntryOnHomepage       "Wpisy na głównej"                   1
 @var checkbox showThumbnailsOnHomepage  "Miniatury na głównej"               1
 @var checkbox showDefaultCategories     "Domyślne kategorie"                 1
@@ -470,6 +474,30 @@
     if (!ownCategoryNotifications) {
         aside.left-panel > section.links > .content ul li.bucket.new:after {
             visibility: hidden !important;
+        }
+    }
+    
+    if (!showSidebarLinks) {
+        section.sidebar > section.links-sidebar {
+            display: none !important;
+        }
+    }
+    
+    if (!showSidebarEntries) {
+        section.sidebar > section.entries-sidebar {
+            display: none !important;
+        }
+    }
+    
+    if (!showSidebarPopularTags) {
+        section.sidebar > section.tags-sidebar {
+            display: none !important;
+        }
+    }
+
+    if (!showSidebarFooter) {
+        section.sidebar > footer.footer {
+            display: none !important;
         }
     }
 
