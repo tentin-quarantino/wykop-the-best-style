@@ -500,6 +500,14 @@
             display: none !important;
         }
     }
+    
+    allSidebarPanelsHidden = !(showSidebarLinks || showSidebarEntries || showSidebarPopularTags || showSidebarFooter);
+    
+    if (allSidebarPanelsHidden) {
+        .content {
+            width: 100% !important;
+        }
+    }
 
     [data-night-mode],
     [data-night-mode] aside.left-panel > section.links > .content ul li.bucket.new:after,
