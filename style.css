@@ -443,7 +443,14 @@
 
         .left-panel > section.links li.home span.button > a > span:after {
             content: "Strona główna" !important;
-            color: #fff;
+        }
+        
+        .left-panel > section.links li.home.current span.button > a > span:after {
+            color: #fff !important;
+        }
+        
+        .left-panel > section.links li.home:not(.current) span.button > a > span:after {
+            color: var(--steelBluish) !important;
         }
 
         header.header > .left > nav.main > ul li a[href="/wykopalisko"] > span {
