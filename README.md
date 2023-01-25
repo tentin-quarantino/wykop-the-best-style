@@ -26,4 +26,3 @@ Propozycje lub błędy proszę zgłaszać na jeden ze sposobów:
 
 ## Pozostałe informacje
 - instalację i aktualizację na smartfonach postępujemy tak samo, ale wymagana jest przeglądarka, która obsługuje rozszerzenia, np. [Kiwi](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=pl)
-- styl póki co dostępny tylko dla trybu nocnego
