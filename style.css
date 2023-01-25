@@ -18,7 +18,8 @@
 @var checkbox showThumbnailsOnHomepage  "Miniatury na głównej"               1
 @var checkbox showDefaultCategories     "Domyślne kategorie"                 1
 @var checkbox showDoodle                "Obrazki w nagłówku"                 1
-@var checkbox showFloatingButtons       "Przyciski po prawej"                1
+@var checkbox upcomingCounter           "Licznik nad Wykopaliskiem"          1
+@var checkbox showFloatingButtons       "Przyciski po prawej na dole"        1
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."         1
 @var checkbox showUpvotingUsers         "Lista plusujących"                  1
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"              0
@@ -515,6 +516,12 @@
         main.main > section,
         main.main > aside.wide-top {
             margin: 6px 0 0 mainContentLeftMargin !important;
+        }
+    }
+    
+    if (!upcomingCounter) {
+        nav.main .upcoming-count {
+            display: none !important;
         }
     }
 
