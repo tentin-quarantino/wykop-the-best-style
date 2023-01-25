@@ -274,7 +274,8 @@
         }
         
         .content section.link-block.detailed > section > article {
-            padding: 16px 340px 16px 0 !important;
+            padding-top: 16px !important;
+            padding-bottom: 16px !important;
         }
         
         .content section.link-block:not(.detailed) > section > article figure {
