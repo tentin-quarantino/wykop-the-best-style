@@ -1705,4 +1705,14 @@
     [data-night-mode] section.ranking-page > section.ranking table tbody tr.self td.left > section .right time {
         color: #aaa;
     }
+
+    [data-night-mode] section.stream.entry-subcomments section.entry.author > article:before,
+    [data-night-mode] section.stream.entry-subcomments section.entry.link-author > article:before,
+    [data-night-mode] section.stream.entry-subcomments section.entry.own > article:before {
+        left: -2px;
+    }
+
+    [data-night-mode] section.stream.entry-subcomments section.entry.reply:before {
+        background: none;
+    }
 }
