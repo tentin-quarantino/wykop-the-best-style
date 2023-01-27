@@ -1732,6 +1732,12 @@
     [data-night-mode] section.step-one > aside > .content ul li p time.date {
         color: #aaa;
     }
+
+    .comments section.stream.entry-subcomments section.entry.author > article:before,
+    .comments section.stream.entry-subcomments section.entry.link-author > article:before,
+    .comments section.stream.entry-subcomments section.entry.own > article:before {
+        left: -2px;
+    }
     
     section.entry.reply:before {
         display: none !important;
