@@ -1731,10 +1731,6 @@
     .comments section.stream.entry-subcomments section.entry.own > article:before {
         left: -2px;
     }
-
-    .comments section.stream.entry-subcomments section.entry.reply:before {
-        background: none;
-    }
     
     section.entry.reply:before {
         display: none !important;
