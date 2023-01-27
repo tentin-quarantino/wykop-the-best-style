@@ -1714,4 +1714,16 @@
     section.entry.reply:before {
         display: none !important;
     }
+    
+    [data-night-mode] aside.left-panel > section.links > .content ul:not(:last-of-type):after {
+        background: #515151 !important;
+    }
+    
+    [data-night-mode] aside.left-panel > section.buttons {
+        border-bottom-color: transparent !important;
+    }
+    
+    [data-night-mode] aside.left-panel > footer {
+        border-top-color: #515151 !important;
+    }
 }
