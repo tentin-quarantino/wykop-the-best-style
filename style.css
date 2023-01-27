@@ -418,7 +418,7 @@
             margin-left: 56px !important;
         }
         
-        [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
+        [data-night-mode] section.entry.reply:not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
             fill: #212121;
         }
     }
