@@ -23,11 +23,12 @@
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."         1
 @var checkbox showUpvotingUsers         "Lista plusujących"                  1
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"              0
+@var checkbox linksCompactModeMobile    "Kompaktowe znaleziska (Mobilne)"    0
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
 @var checkbox transparentAvatars        "Awatary bez tła"                    1
 @var checkbox hideAuthorBarOnThumbnails "Ukryj biały pasek na obrazkach w komentarzach" 0
 @var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
-@var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 1
+@var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 0
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)" 0
 @var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 860, 2500, 10, 'px']
 @var checkbox mainContentCentered       "Strona wyśrodkowana  (PC)"          1
@@ -250,6 +251,10 @@
         section.link-block:not(.detailed) > section > article {
             width: calc(100% - 73px) !important;
         }
+                        
+        section.link-block:not(.detailed) section.vote-box {
+            margin: 12px 0 !important;
+        }
     }
 
     @media (min-width: 641px) and (max-width: 720px) {
@@ -299,7 +304,8 @@
     }
 
     if (!showDefaultCategories) {
-        aside.left-panel > section.links > .content ul.categories {
+        aside.left-panel > section.links > .content ul.categories,
+        aside.left-panel > section.links > .content header {
             display: none !important;
         }
     }
@@ -380,6 +386,10 @@
         section.entry > article .edit-wrapper {
             margin-left: 50px !important;
         }
+        
+        [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
+            fill: #313131;
+        }
     } else {
         .entry.reply section.entry-photo figure,
         .entry.reply section.entry-photo figure figcaption {
@@ -406,6 +416,10 @@
         
         section.entry > article .edit-wrapper {
             margin-left: 56px !important;
+        }
+        
+        [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
+            fill: #212121;
         }
     }
 
@@ -550,8 +564,20 @@
     }
     
     if (!upcomingCounter) {
-        nav.main .upcoming-count {
+        nav.main .upcoming-count,
+        strong.upcoming-count.mobile {
             display: none !important;
+        }
+    }
+    
+    if (linksCompactModeMobile) {
+        .link-block.mobile > section > article > .info,
+        .link-block.mobile > section > article > .actions.mobile.compact {
+            display: none !important;
+        }
+
+        .link-block.mobile:not(.detailed) > section {
+            min-height: 0 !important
         }
     }
 
@@ -868,11 +894,6 @@
 
     section.entry-voters ul:before {
         content: '+' !important;
-    }
-
-    [data-night-mode] button.toggle-to-favourite:not(.active) .svg-inline svg .body,
-    [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
-        fill: #313131;
     }
 
     [data-night-mode] section.entry.reply.highlighted .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
@@ -1308,8 +1329,9 @@
         box-shadow: 0 4px 4px #1c1c1cc9;
     }
 
+    [data-night-mode] .main-content > main > aside.profile-top > nav#profile-tab-nav > ul.main > li.current a,
     [data-night-mode] nav.new-pagination.number li:not(.prev):not(.next).active a {
-        color: #f06239;
+        color: #f06239 !important;
     }
 
     [data-night-mode] section.popper.tag-actions,
@@ -1464,7 +1486,7 @@
         border: 2px solid #3c3c3c !important;
     }
     
-    section.link-block > section > article figure {
+    section.link-block:not(.mobile) > section > article figure {
         top: 16px !important;
     }
 
@@ -1472,17 +1494,13 @@
         min-height: 182px !important;
     }
 
-    section.link-block:not(.detailed) > section > article figure {
+    section.link-block:not(.detailed):not(.mobile) > section > article figure {
         top: 12px !important;
         left: 0 !important;
     }
 
     section.link-block:not(.detailed) > section > aside {
         width: 73px !important;
-    }
-
-    section.link-block:not(.detailed) section.vote-box {
-        margin: 12px 0 !important;
     }
 
     section.link-block > section > article * {
@@ -1719,7 +1737,25 @@
         word-break: keep-all !important;
     }
 
-    [data-night-mode] section.ranking-page > section.ranking table tbody tr.self td.left > section .right time {
+    [data-night-mode] section.ranking-page > section.ranking table tbody tr.self td.left > section .right time,
+    [data-night-mode] section.step-one > aside > .content ul li p,
+    [data-night-mode] section.step-one > aside > .content ul li p time.date {
         color: #aaa;
+    }
+    
+    section.entry.reply:before {
+        display: none !important;
+    }
+    
+    [data-night-mode] aside.left-panel > section.links > .content ul:not(:last-of-type):after {
+        background: transparent !important;
+    }
+    
+    [data-night-mode] aside.left-panel > section.buttons {
+        border-bottom-color: transparent !important;
+    }
+    
+    [data-night-mode] aside.left-panel > footer {
+        border-top-color: transparent !important;
     }
 }
