@@ -22,6 +22,7 @@
 @var checkbox showFloatingButtons       "Przyciski po prawej na dole"        1
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."         1
 @var checkbox showUpvotingUsers         "Lista plusujących"                  1
+@var checkbox showGenderBars            "Paski płci pod awatarami"           1
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"              0
 @var checkbox linksCompactModeMobile    "Kompaktowe znaleziska (Mobilne)"    0
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
@@ -561,6 +562,12 @@
 
         .link-block.mobile:not(.detailed) > section {
             min-height: 0 !important
+        }
+    }
+    
+    if (!showGenderBars) {
+        a.avatar figure:before {
+            background: transparent !important;
         }
     }
 
