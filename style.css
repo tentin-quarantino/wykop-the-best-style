@@ -1296,8 +1296,9 @@
         box-shadow: 0 4px 4px #1c1c1cc9;
     }
 
+    [data-night-mode] .main-content > main > aside.profile-top > nav#profile-tab-nav > ul.main > li.current a,
     [data-night-mode] nav.new-pagination.number li:not(.prev):not(.next).active a {
-        color: #f06239;
+        color: #f06239 !important;
     }
 
     [data-night-mode] section.popper.tag-actions,
