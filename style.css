@@ -1457,7 +1457,7 @@
         border: 2px solid #3c3c3c !important;
     }
     
-    section.link-block > section > article figure {
+    section.link-block:not(.mobile) > section > article figure {
         top: 16px !important;
     }
 
@@ -1465,7 +1465,7 @@
         min-height: 182px !important;
     }
 
-    section.link-block:not(.detailed) > section > article figure {
+    section.link-block:not(.detailed):not(.mobile) > section > article figure {
         top: 12px !important;
         left: 0 !important;
     }
