@@ -1707,4 +1707,8 @@
     [data-night-mode] section.step-one > aside > .content ul li p time.date {
         color: #aaa;
     }
+    
+    section.entry.reply:before {
+        display: none !important;
+    }
 }
