@@ -1743,6 +1743,6 @@
     }
     
     .editor > .content > textarea {
-        font-family: Arial, system-ui, sans-serif !important;
+        font-family: entriesFont, Arial, system-ui, sans-serif !important;
     }
 }
