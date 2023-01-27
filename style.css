@@ -444,17 +444,17 @@
     }
     
     if (hideAuthorBarOnThumbnails) {    
-        [data-night-mode] .comments section.entry-photo figure:has(img) {
+        .comments section.entry-photo figure:has(img) {
             margin-bottom: -20px;
         }
 
-        [data-night-mode] .comments section.entry-photo figure img {
+        .comments section.entry-photo figure img {
             clip-path: inset(0 0 20px 0);
             border-radius: 0;
         }
 
-        [data-night-mode] .comments section.entry-photo figure img+figcaption,
-        [data-night-mode] .comments section.entry-photo figure span:has(img)+figcaption {
+        .comments section.entry-photo figure img+figcaption,
+        .comments section.entry-photo figure span:has(img)+figcaption {
             bottom: 20px;
         }
     }
