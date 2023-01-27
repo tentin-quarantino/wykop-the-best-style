@@ -23,6 +23,7 @@
 @var checkbox showSourceDevice          "via Wykop, via Mobile etc."         1
 @var checkbox showUpvotingUsers         "Lista plusujących"                  1
 @var checkbox commentsCompactMode       "Kompaktowe komentarze"              0
+@var checkbox linksCompactModeMobile    "Kompaktowe znaleziska (Mobilne)"    0
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
 @var checkbox transparentAvatars        "Awatary bez tła"                    1
 @var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
@@ -549,6 +550,17 @@
         nav.main .upcoming-count,
         strong.upcoming-count.mobile {
             display: none !important;
+        }
+    }
+    
+    if (linksCompactModeMobile) {
+        .link-block.mobile > section > article > .info,
+        .link-block.mobile > section > article > .actions.mobile.compact {
+            display: none !important;
+        }
+
+        .link-block.mobile:not(.detailed) > section {
+            min-height: 0 !important
         }
     }
 
