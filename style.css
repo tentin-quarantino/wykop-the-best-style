@@ -298,7 +298,8 @@
     }
 
     if (!showDefaultCategories) {
-        aside.left-panel > section.links > .content ul.categories {
+        aside.left-panel > section.links > .content ul.categories,
+        aside.left-panel > section.links > .content header {
             display: none !important;
         }
     }
@@ -1716,7 +1717,7 @@
     }
     
     [data-night-mode] aside.left-panel > section.links > .content ul:not(:last-of-type):after {
-        background: #515151 !important;
+        background: transparent !important;
     }
     
     [data-night-mode] aside.left-panel > section.buttons {
@@ -1724,6 +1725,6 @@
     }
     
     [data-night-mode] aside.left-panel > footer {
-        border-top-color: #515151 !important;
+        border-top-color: transparent !important;
     }
 }
