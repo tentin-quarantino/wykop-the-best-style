@@ -542,7 +542,8 @@
     }
     
     if (!upcomingCounter) {
-        nav.main .upcoming-count {
+        nav.main .upcoming-count,
+        strong.upcoming-count.mobile {
             display: none !important;
         }
     }
