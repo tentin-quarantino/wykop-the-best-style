@@ -249,6 +249,10 @@
         section.link-block:not(.detailed) > section > article {
             width: calc(100% - 73px) !important;
         }
+                        
+        section.link-block:not(.detailed) section.vote-box {
+            margin: 12px 0 !important;
+        }
     }
 
     @media (min-width: 641px) and (max-width: 720px) {
@@ -1468,10 +1472,6 @@
 
     section.link-block:not(.detailed) > section > aside {
         width: 73px !important;
-    }
-
-    section.link-block:not(.detailed) section.vote-box {
-        margin: 12px 0 !important;
     }
 
     section.link-block > section > article * {
