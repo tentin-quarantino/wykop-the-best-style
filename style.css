@@ -379,6 +379,10 @@
         section.entry > article .edit-wrapper {
             margin-left: 50px !important;
         }
+        
+        [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
+            fill: #313131;
+        }
     } else {
         .entry.reply section.entry-photo figure,
         .entry.reply section.entry-photo figure figcaption {
@@ -405,6 +409,10 @@
         
         section.entry > article .edit-wrapper {
             margin-left: 56px !important;
+        }
+        
+        [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
+            fill: #212121;
         }
     }
 
@@ -851,11 +859,6 @@
 
     section.entry-voters ul:before {
         content: '+' !important;
-    }
-
-    [data-night-mode] button.toggle-to-favourite:not(.active) .svg-inline svg .body,
-    [data-night-mode] section.entry.reply:nth-child(odd):not(.highlighted) > article .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
-        fill: #313131;
     }
 
     [data-night-mode] section.entry.reply.highlighted .edit-wrapper > footer section.actions button.toggle-to-favourite:not(.active) .svg-inline svg .body {
