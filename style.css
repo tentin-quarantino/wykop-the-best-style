@@ -1730,15 +1730,19 @@
         display: none !important;
     }
     
-    [data-night-mode] aside.left-panel > section.links > .content ul:not(:last-of-type):after {
+    aside.left-panel > section.links > .content ul:not(:last-of-type):after {
         background: transparent !important;
     }
     
-    [data-night-mode] aside.left-panel > section.buttons {
+    aside.left-panel > section.buttons {
         border-bottom-color: transparent !important;
     }
     
-    [data-night-mode] aside.left-panel > footer {
+    aside.left-panel > footer {
         border-top-color: transparent !important;
+    }
+    
+    .editor > .content > textarea {
+        font-family: Arial, system-ui, sans-serif !important;
     }
 }
