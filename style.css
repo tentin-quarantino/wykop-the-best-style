@@ -1706,13 +1706,13 @@
         color: #aaa;
     }
 
-    [data-night-mode] section.stream.entry-subcomments section.entry.author > article:before,
-    [data-night-mode] section.stream.entry-subcomments section.entry.link-author > article:before,
-    [data-night-mode] section.stream.entry-subcomments section.entry.own > article:before {
+    .comments section.stream.entry-subcomments section.entry.author > article:before,
+    .comments section.stream.entry-subcomments section.entry.link-author > article:before,
+    .comments section.stream.entry-subcomments section.entry.own > article:before {
         left: -2px;
     }
 
-    [data-night-mode] section.stream.entry-subcomments section.entry.reply:before {
+    .comments section.stream.entry-subcomments section.entry.reply:before {
         background: none;
     }
 }
