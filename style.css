@@ -1702,7 +1702,9 @@
         word-break: keep-all !important;
     }
 
-    [data-night-mode] section.ranking-page > section.ranking table tbody tr.self td.left > section .right time {
+    [data-night-mode] section.ranking-page > section.ranking table tbody tr.self td.left > section .right time,
+    [data-night-mode] section.step-one > aside > .content ul li p,
+    [data-night-mode] section.step-one > aside > .content ul li p time.date {
         color: #aaa;
     }
 }
