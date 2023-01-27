@@ -26,7 +26,7 @@
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
 @var checkbox transparentAvatars        "Awatary bez tła"                    1
 @var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
-@var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 1
+@var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 0
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)" 0
 @var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 860, 2500, 10, 'px']
 @var checkbox mainContentCentered       "Strona wyśrodkowana  (PC)"          1
