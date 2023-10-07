@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Wykop the best style
-@version      2.7.1
+@version      2.7.2
 @namespace    userstyles.world/user/tentin_quarantino
 @description  Przejrzysty styl dla Wykopu, wyposażony w opcje, które pozwalają dostosować go do siebie.
 @author       tentin_quarantino (https://wykop.pl/ludzie/tentin_quarantino)
@@ -28,6 +28,7 @@
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
 @var checkbox transparentAvatars        "Awatary bez tła"                    1
 @var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
+@var checkbox hiddenEntryButtonsPC      "Ukrywane przyciski pod wpisem (PC)" 1
 @var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 0
 @var checkbox nonStickyHeaderBarMobile  "Nieprzyklejony pasek nagłówka (Mobilne)" 0
 @var range    maxFeedWidthPC            "Maks. szerokość strony (PC)"        [1260, 860, 2500, 10, 'px']
@@ -144,6 +145,11 @@
 
             section.entry.reply > article {
                 padding-right: 8px !important;
+            }
+        }
+        if (!hiddenEntryButtonsPC) {
+            .content > section.entry > article .edit-wrapper > footer section.actions ul li {
+                opacity: 1 !important;
             }
         }
     }
