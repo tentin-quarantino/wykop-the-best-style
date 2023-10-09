@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Wykop the best style
-@version      2.7.2
+@version      2.7.3
 @namespace    userstyles.world/user/tentin_quarantino
 @description  Przejrzysty styl dla Wykopu, wyposażony w opcje, które pozwalają dostosować go do siebie.
 @author       tentin_quarantino (https://wykop.pl/ludzie/tentin_quarantino)
@@ -36,6 +36,7 @@
 @var range    mainContentLeftMargin     "Odsunięcie strony od lewej (PC)"    [0, 0, 50, 1, '%']
 @var range    entriesMarginPC           "Odstępy między wpisami (PC)"        [16, 1, 64, 1, 'px']
 @var range    entriesMarginMobile       "Odstępy między wpisami (Mobilne)"   [16, 1, 64, 1, 'px']
+@var range    entriesPictureSize        "Wielkość obrazków we wpisach"       [400, 130, 600, 10, 'px']
 @var select   entriesFont               "Font wpisów i komentarzy"           {
     "arial:Arial (domyślna Wykop the best style)*": "Arial",
     "open_sans:Open Sans (oficjalny Wykop 2.0)": "Open Sans",
@@ -931,6 +932,10 @@
 
     [data-night-mode] .vue-simple-spinner {
         border-color: #cad0d0 #2c2c2c #2c2c2c !important;
+    }
+    
+    .entry section.entry-photo figure {
+        max-width: entriesPictureSize;
     }
     
     .entry section.entry-photo figure,
