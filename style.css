@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Wykop the best style
-@version      2.7.3
+@version      2.7.4
 @namespace    userstyles.world/user/tentin_quarantino
 @description  Przejrzysty styl dla Wykopu, wyposażony w opcje, które pozwalają dostosować go do siebie.
 @author       tentin_quarantino (https://wykop.pl/ludzie/tentin_quarantino)
@@ -592,7 +592,6 @@
         --squeeze: rgba(#f8fafc, 0.025);
     }
 
-    header.header > .right > nav > ul > li > a.new:after,
     [data-night-mode] article.link-article,
     [data-night-mode] aside.left-panel > section.buttons > .content ul li a:before,
     [data-night-mode] ul.menu-dropdown,
@@ -621,7 +620,6 @@
 
     [data-night-mode] header.header {
         background: #3c3c3c !important;
-        color: #0000 !important;
     }
 
     [data-night-mode] header.header > .left > nav.main > ul li a + strong {
@@ -957,14 +955,8 @@
 
     .links > .content .buckets > .bucket:after,
     .messages-page section.message > article.me > div.content,
-    .notifications.dropdown > a:after,
     .pm.dropdown > a:after {
         border: none !important;
-    }
-
-    .notifications.dropdown > a:after,
-    .links > .content .buckets > .bucket:after {
-        border-radius: 50% !important;
     }
 
     [data-night-mode] .messages-page section.message > article.me > div.content {
