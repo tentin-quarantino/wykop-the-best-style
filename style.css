@@ -27,6 +27,7 @@
 @var checkbox linksCompactModeMobile    "Kompaktowe znaleziska (Mobilne)"    0
 @var checkbox angularVikop              "Kanciasty Wykop"                    0
 @var checkbox transparentAvatars        "Awatary bez tła"                    1
+@var checkbox hideAuthorBarOnThumbnails "Ukryj biały pasek na obrazkach w komentarzach" 0
 @var checkbox ownCategoryNotifications  "Powiadomienia z własnych kategorii" 1
 @var checkbox hiddenEntryButtonsPC      "Ukrywane przyciski pod wpisem (PC)" 1
 @var checkbox hiddenEntryButtonsMobile  "Ukrywane przyciski pod wpisem (Mobilne)" 0
@@ -447,6 +448,22 @@
         aside.profile-top > section > header > a.avatar figure img {
             border: 5px solid transparent !important;
             background: none !important;
+        }
+    }
+    
+    if (hideAuthorBarOnThumbnails) {    
+        .comments section.entry-photo figure:has(img) {
+            margin-bottom: -20px;
+        }
+
+        .comments section.entry-photo figure img {
+            clip-path: inset(0 0 20px 0);
+            border-radius: 0;
+        }
+
+        .comments section.entry-photo figure img+figcaption,
+        .comments section.entry-photo figure span:has(img)+figcaption {
+            bottom: 20px;
         }
     }
 
